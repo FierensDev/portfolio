@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+
+@keyframes opacity-100-to-0{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.opacity-100-to-0{
+  animation: opacity-100-to-0 1s infinite;
+}
