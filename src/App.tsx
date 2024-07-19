@@ -30,8 +30,16 @@ function App() {
   
 
   return (
-    <div className="App">
-      <div className='h-[100vh] bg-black px-[24px] py-[16px] h-[100vh] overflow-auto'>
+    <div className="App">   
+      <div className='absolute inset-0 bg-black px-[24px] flex place-content-between'>
+          <div className='bg-gradient-to-t from-custom-gray to-black h-[calc(100%)] w-[1px]'></div>
+          <div className='bg-gradient-to-t from-custom-gray to-black h-[calc(100%)] w-[1px]'></div>
+          <div className='bg-gradient-to-t from-custom-gray to-black h-[calc(100%)] w-[1px]'></div>
+          <div className='bg-gradient-to-t from-custom-gray to-black h-[calc(100%)] w-[1px]'></div>
+          <div className='bg-gradient-to-t from-custom-gray to-black h-[calc(100%)] w-[1px]'></div>
+      </div>
+
+      <div className='absolute inset-0 h-[100vh] px-[24px] py-[16px]  overflow-auto'>
         <div className='w-full h-[59px]'></div>
         <div className='flex justify-between place-items-center'>
           <div><p className='text-custom-gray text-deuns-xs'>Oh, bienvenue ! </p></div>
