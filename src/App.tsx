@@ -39,7 +39,7 @@ function App() {
           <div className='bg-gradient-to-t from-custom-gray to-black h-[calc(100%)] w-[1px]'></div>
       </div>
 
-      <div className='absolute inset-0 h-[100vh] px-[24px] py-[16px]  overflow-auto'>
+      <div className='absolute inset-0 h-[100vh] px-[24px] py-[16px] overflow-auto'>
         <div className='w-full h-[59px]'></div>
         <div className='flex justify-between place-items-center'>
           <div><p className='text-custom-gray text-deuns-xs'>Oh, bienvenue ! </p></div>
@@ -50,7 +50,19 @@ function App() {
             <Weather />
           </div>
         </div>
+        
+        <div className='h-[100px]'></div>
+        
+        <div className='text-white font-light text-deuns-l text-left py-[]'>
+          <p>Je suis Denis,</p>
+          <p>un développeur web</p>
+          <div className='overflow-hidden  h-[59px]'>
+            <p className='move-text-to-top font-semibold'>Front end</p>
+            <p className='move-text-to-top font-semibold'>Back end</p>
+          </div>
+        </div>
       </div>
+
 
       <Navbar />
     </div>

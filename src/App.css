@@ -53,3 +53,27 @@
 .opacity-100-to-0{
   animation: opacity-100-to-0 2s infinite;
 }
+
+@keyframes move-text-to-top{
+  0%{
+    transform: translateY(0px);
+  }
+  45%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-55px);
+  }
+  95%{
+    transform: translateY(-55px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+
+
+.move-text-to-top{
+  animation: move-text-to-top 7s infinite;
+}

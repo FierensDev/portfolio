@@ -11,7 +11,8 @@ module.exports = {
       fontSize: {
         'deuns-xs' : '0.75rem',
         'deuns-s' : '1rem',
-        'deuns-m' : '1.25rem'
+        'deuns-m' : '1.25rem',
+        'deuns-l': '2.25rem',
       }
     },
   },
