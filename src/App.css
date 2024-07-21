@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.gradient-black-70{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 0% ,rgba(255, 255, 255, 1) 100%);
+  background-clip: text;
+  --webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -72,8 +80,31 @@
   }
 }
 
-
+@keyframes move-text-to-top-md{
+  0%{
+    transform: translateY(0px);
+  }
+  45%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-75px);
+  }
+  95%{
+    transform: translateY(-75px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
 
 .move-text-to-top{
   animation: move-text-to-top 7s infinite;
+}
+
+
+@media screen and (min-width: 740px){
+  .move-text-to-top{
+    animation: move-text-to-top-md 7s infinite;
+  }
 }

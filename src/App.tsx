@@ -42,7 +42,7 @@ function App() {
       <div className='absolute inset-0 h-[100vh] px-[24px] py-[16px] overflow-auto'>
         <div className='w-full h-[59px]'></div>
         <div className='flex justify-between place-items-center'>
-          <div><p className='text-custom-gray text-deuns-xs'>Oh, bienvenue ! </p></div>
+          <div><p className='text-custom-gray text-deuns-xs'>Hey, bienvenue ! </p></div>
           <div className='flex place-items-center'>
             <div className='bg-green-500 h-[7px] w-[7px] rounded-full opacity-100-to-0'></div>
             <p className='text-custom-gray px-2 text-deuns-xs'>Paris</p>
@@ -53,12 +53,13 @@ function App() {
         
         <div className='h-[100px]'></div>
         
-        <div className='text-white font-light text-deuns-l text-left py-[]'>
-          <p>Je suis Denis,</p>
-          <p>un développeur web</p>
-          <div className='overflow-hidden  h-[59px]'>
-            <p className='move-text-to-top font-semibold'>Front end</p>
-            <p className='move-text-to-top font-semibold'>Back end</p>
+        <div className='text-deuns-l md:text-deuns-xl text-left '>
+          {/* <div className='bg-gradient-to-r from-gradient-black-71 absolute inset-0'></div> */}
+          <p className='gradient-black-70 w-fit'>Je suis Denis,</p>
+          <p className='gradient-black-70 w-fit'>un développeur web</p>
+          <div className='overflow-hidden h-[59px]'>
+            <p className='move-text-to-top font-semibold text-white'>Front end</p>
+            <p className='move-text-to-top font-semibold text-white'>Back end</p>
           </div>
         </div>
       </div>
