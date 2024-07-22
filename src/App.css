@@ -171,3 +171,9 @@
 /* @media (prefers-reduced-motion: no-preference){
 
 } */
+
+.card-glass-effect{
+  border: 1px solid #363636;
+  border-radius: 10rem;
+  background-color: rgba(39, 39, 39, .32);
+}

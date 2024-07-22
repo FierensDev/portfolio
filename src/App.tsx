@@ -55,6 +55,7 @@ function App() {
         <div className='h-[100px]'></div>
 
         <div className='text-deuns-l md:text-deuns-xl text-left '>
+          {/* Animer le gradient -> metal */}
           {/* <div className='bg-gradient-to-r from-gradient-black-71 absolute inset-0'></div> */}
           <p className='gradient-black-70 w-fit'>Je suis Denis,</p>
           <p className='gradient-black-70 w-fit'>un développeur web</p>
@@ -64,10 +65,10 @@ function App() {
           </div>
         </div>
 
-        <div>scroll y technos</div>
-
         <div className='h-[100px]'></div>
-
+        <div>scroll y technos</div>
+        <div className='h-[100px]'></div>
+{/* 
         <div className=''>
           <div className='h-[calc(100vh)] sticky top-[75px]'>
             <ProjectCard background="bg-blue-500"/>
@@ -77,6 +78,23 @@ function App() {
           </div>
           <div className='h-[calc(100vh)] sticky top-[75px]'>
             <ProjectCard background="bg-red-500"/>
+          </div>
+        </div> */}
+        <div>
+          <div className='flex place-items-center'>
+            <p className='pr-3 text-deuns-xs'>projects</p>
+            <div className='h-[1px] w-full bg-custom-gray'></div>
+          </div>
+
+          <div className='grid grid-cols-[1fr,1fr]'>
+            <div className='bg-[#1D1D1D] w-full h-full'>
+              
+              <div className='w-[280px] h-[380px]'>
+                <div className="w-[90%] h-[90%] z-10 card-glass-effect"></div>
+              </div>
+            
+            </div>
+            <div className='bg-red-500 w-full h-full'>a</div>
           </div>
         </div>
 
