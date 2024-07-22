@@ -64,6 +64,8 @@ function App() {
           </div>
         </div>
 
+        <div>scroll y technos</div>
+
         <div className='h-[100px]'></div>
 
         <div className=''>
@@ -96,8 +98,8 @@ function App() {
 
             <div className='h-[100px]'></div>
 
-            <div className='flex justify-end place-items-center '>
-              <div className='w-fit border-container'>
+            {/* <div className='flex justify-end place-items-center '>
+              <div className='w-fit border-container bg-red-300'>
                 <div className='flex place-items-end'>
                   <p className='text-custom-gray text-deuns-xs font-light'>A propos de moi</p>
                   <div className='text-custom-gray arrow-disapear'>
@@ -106,12 +108,24 @@ function App() {
                     </svg>
                   </div>
                 </div>
-                <div  className='bg-custom-gray h-[1px] border-to-right'></div>
+                <div className='bg-custom-gray h-[1px] border-to-right'></div>
+              </div>
+            </div> */}
+
+            <div className='m-auto relative flex place-items-center justify-center w-fit p-[2px] border-container'>
+              <div className='bg-white w-[50%] h-full absolute border-to-right'></div>
+              <div className='bg-black flex relative p-4'>
+                <p className='text-custom-gray text-deuns-xs font-light'>A propos de moi</p>
+                <div className='text-custom-gray arrow-disapear'>
+                  <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
               </div>
             </div>
 
             <footer>
-              
+azeazer
             </footer>
           </div>
         </div>

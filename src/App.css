@@ -167,3 +167,7 @@
 .border-container:hover .arrow-disapear{
   animation: arrow-disapear 0.8s linear;
 }
+/* remove the animations for pple that dont want it */
+/* @media (prefers-reduced-motion: no-preference){
+
+} */
