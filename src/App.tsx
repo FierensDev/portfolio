@@ -3,7 +3,7 @@ import './App.css';
 import { Navbar } from './components/Navbar/Navbar';
 import { Weather } from './components/Weather/Weather';
 import { ProjectCard } from './components/ProjectCard/ProjectCard';
-
+import profilePicture from './assets/tower101.png'
 
 function App() {
 
@@ -37,7 +37,7 @@ function App() {
       </div> */}
 
       {/* content  */}
-      <div className='px-[24px] '> 
+      <main className='px-[24px] '> 
         <div className='h-[59px]'></div>
 
         <div className='flex justify-between place-items-center'>
@@ -78,24 +78,46 @@ function App() {
           </div>
         </div>
 
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis ratione modi enim numquam. Culpa, provident. Eveniet error sequi neque sunt enim iste perferendis quaerat, nesciunt consectetur nulla repellat laudantium voluptate?
-          Voluptatibus id quam odio delectus repellendus. Ad qui accusantium atque ipsum optio rerum assumenda magni, quae porro iure eum omnis necessitatibus nisi deserunt earum sit voluptatem soluta error, explicabo impedit.
-          Laborum praesentium nobis soluta facere necessitatibus? Nostrum mollitia ipsam amet, quo, harum assumenda itaque porro quia cupiditate aspernatur quae doloremque iure cumque praesentium? Natus iste quibusdam praesentium accusamus repellendus laborum.
-          Quo similique minima dolor blanditiis nam obcaecati eos, beatae et eligendi voluptatum accusantium quia quos saepe ex officiis perspiciatis, error repellat, vitae qu quam odio delectus repellendus. Ad qui accusantium atque ipsum optio rerum assumenda magni, quae porro iure eum omnis necessitatibus nisi deserunt earum sit voluptatem soluta error, explicabo impedit.
-          Laborum praesentium nobis soluta facere necessitatibus? Nostrum mollitia ipsam amet, quo, harum assumenda itaque porro quia cupiditate aspernatur quae doloremque iure cumque praesentium? Natus iste quibusdam praesentium accusamus repellendus laborum.
-          Quo similique minima dolor blanditiis nam obcaecati eos, beatae et eligendi voluptatum accusantium q quam odio delectus repellendus. Ad qui accusantium atque ipsum optio rerum assumenda magni, quae porro iure eum omnis necessitatibus nisi deserunt earum sit voluptatem soluta error, explicabo impedit.
-          Laborum praesentium nobis soluta facere necessitatibus? Nostrum mollitia ipsam amet, quo, harum assumenda itaque porro quia cupiditate aspernatur quae doloremque iure cumque praesentium? Natus iste quibusdam praesentium accusamus repellendus laborum.
-          Quo similique minima dolor blanditiis nam obcaecati eos, beatae et eligendi voluptatum accusantium quia quos saepe ex officiis perspiciatis, error repellat, vitae qu quam odio delectus repellendus. Ad qui accusantium atque ipsum optio rerum assumenda magni, quae porro iure eum omnis necessitatibus nisi deserunt earum sit voluptatem soluta error, explicabo impedit.
-          Laborum praesentium nobis soluta facere necessitatibus? Nostrum mollitia ipsam amet, quo, harum assumenda itaque porro quia cupiditate aspernatur quae doloremque iure cumque praesentium? Natus iste quibusdam praesentium accusamus repellendus laborum.
-          Quo similique minima dolor blanditiis nam obcaecati eos, beatae et eligendi voluptatum accusantium quia quos saepe ex officiis perspiciatis, error repellat, vitae qu quam odio delectus repellendus. Ad qui accusantium atque ipsum optio rerum assumenda magni, quae porro iure eum omnis necessitatibus nisi deserunt earum sit voluptatem soluta error, explicabo impedit.
-          Laborum praesentium nobis soluta facere necessitatibus? Nostrum mollitia ipsam amet, quo, harum assumenda itaque porro quia cupiditate aspernatur quae doloremque iure cumque praesentium? Natus iste quibusdam praesentium accusamus repellendus laborum.
-          Quo similique minima dolor blanditiis nam obcaecati eos, beatae et eligendi voluptatum accusantium quia quos saepe ex officiis perspiciatis, error repellat, vitae quuia quos saepe ex officiis perspiciatis, error repellat, vitae qu quam odio delectus repellendus. Ad qui accusantium atque ipsum optio rerum assumenda magni, quae porro iure eum omnis necessitatibus nisi deserunt earum sit voluptatem soluta error, explicabo impedit.
-          Laborum praesentium nobis soluta facere necessitatibus? Nostrum mollitia ipsam amet, quo, harum assumenda itaque porro quia cupiditate aspernatur quae doloremque iure cumque praesentium? Natus iste quibusdam praesentium accusamus repellendus laborum.
-          Quo similique minima dolor blanditiis nam obcaecati eos, beatae et eligendi voluptatum accusantium quia quos saepe ex officiis perspiciatis, error repellat, vitae quidem sed? Ipsa assumenda distinctio libero quis mollitia?
-          Dolorum voluptas maxime rem culpa tenetur officia dolores, rerum doloribus, delectus debitis nihil obcaecati nemo optio quis reiciendis? Consequatur sed nisi sapiente, doloribus illo sint quia blanditiis tempora ipsum! Omnis?</p>
+        <div>
+          <div className='flex place-items-center'>
+            <p className='pr-3 text-deuns-xs'>about</p>
+            <div className='h-[1px] w-full bg-custom-gray'></div>
+          </div>
+
+          <div>
+            <div className='relative z-10'>
+            <p className='text-left text-deuns-m font-light gradient-black-70 w-fit'>Based in London/UK, 9+ years of experience across Product Design disciplines(UI, UX and Branding). A passionate designer and I love what I do, and I strongly believe in;  "The less it is the cooler is your interface"</p>
+            </div>
+
+            <div className='relative'>
+              <div className='absolute inset-0 z-10 bg-gradient-to-t from-black via-transparent to-transparent rounded-xl fade-in'></div>
+              <img src={profilePicture} alt="me with the tower 101 in the background" className='rounded-xl fade-in '/>
+            </div>
+
+            <div className='h-[100px]'></div>
+
+            <div className='flex justify-end place-items-center '>
+              <div className='w-fit border-container'>
+                <div className='flex place-items-end'>
+                  <p className='text-custom-gray text-deuns-xs font-light'>A propos de moi</p>
+                  <div className='text-custom-gray arrow-disapear'>
+                    <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <div  className='bg-custom-gray h-[1px] border-to-right'></div>
+              </div>
+            </div>
+
+            <footer>
+              
+            </footer>
+          </div>
+        </div>
 
         <Navbar />
-      </div>
+      </main>
     </div>
   );
 }

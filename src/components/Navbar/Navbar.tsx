@@ -10,9 +10,9 @@ export function Navbar() {
   }
 
   return (
-    <div>
+    <nav>
       {displayNavbar === true ? 
-        <div className="fixed top-0 left-0 right-0 anime-extend-menu">
+        <div className="fixed top-0 left-0 right-0 anime-extend-menu z-50">
           <div className="absolute inset-0 w-full z-10 bg-black bg-opacity-70 backdrop-blur-sm">
           </div>
           <div className="relative flex flex-col px-[24px] py-[16px] z-20">
@@ -42,7 +42,7 @@ export function Navbar() {
           </div>
         </div>
       :
-        <div className="fixed top-0 left-0 right-0 anime-extend-menu-reverse">
+        <div className="fixed top-0 left-0 right-0 anime-extend-menu-reverse z-50">
           <div className="absolute inset-0 w-full z-10 bg-black bg-opacity-70 backdrop-blur-sm">
           </div>
           <div className="relative flex justify-between place-items-center px-[24px] py-[16px] z-20">
@@ -73,6 +73,6 @@ export function Navbar() {
           </div>
         </div>
       }
-    </div>
+    </nav>
   );
 }
