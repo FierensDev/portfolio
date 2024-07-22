@@ -51,7 +51,6 @@ export function Navbar() {
             <div className="md:hidden">
               <svg 
                 onClick={() => {
-                  console.log('hi1');
                   handlerDisplayNavbar()
                 }}
                 width="15.4" height="12.6" viewBox="0 0 11 9" fill="none"  className="text-custom-gray" xmlns="http://www.w3.org/2000/svg"
@@ -67,9 +66,10 @@ export function Navbar() {
                 <p>contact</p>
             </div>
           </div>
-          <div className=' h-[4px] w-full px-[24px]'>
-            <div className="bg-custom-gray h-[4px] w-full"></div>
-            <div className="bg-gray-400 h-[1px] w-[30%]"></div>
+          <div className="relative bottom-0 z-30 w-full h-[2px] px-[24px]">
+            <div className="bg-custom-gray w-full h-full">
+              <div className="w-full h-full scroll-watcher"></div>
+            </div>
           </div>
         </div>
       }

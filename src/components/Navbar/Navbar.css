@@ -84,3 +84,16 @@
 .anime-extend-menu-reverse{
   animation: extend-menu-reverse 0.3s forwards;
 }
+
+.scroll-watcher{
+  background-color: red;
+  scale: 0 1;
+  transform-origin: left;
+
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+  to { scale : 1 1; }
+}
