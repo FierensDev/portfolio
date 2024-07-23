@@ -80,21 +80,41 @@ function App() {
             <ProjectCard background="bg-red-500"/>
           </div>
         </div> */}
-        <div>
-          <div className='flex place-items-center'>
+        <div className=''>
+          <div className='flex place-items-center mb-5'>
             <p className='pr-3 text-deuns-xs'>projects</p>
             <div className='h-[1px] w-full bg-custom-gray'></div>
           </div>
 
-          <div className='grid grid-cols-[1fr,1fr]'>
+          {/* <div className='grid grid-cols-[1fr,1fr]'>
             <div className='bg-[#1D1D1D] w-full h-full'>
               
-              <div className='w-[280px] h-[380px]'>
-                <div className="w-[90%] h-[90%] z-10 card-glass-effect"></div>
+              <div className='rounded-lg'>
+                <div className="card-glass-effect">
+                  <div className='bg-blue-800 w-[110px] h-[110px]'></div>
+                  <div className=' bg-red-600'>b</div>
+                </div>
               </div>
             
             </div>
             <div className='bg-red-500 w-full h-full'>a</div>
+          </div> */}
+
+          <div className=''>
+            {/* content */}
+            <div className='card-glass-effect border-container'>
+              <div className='w-[110px] h-[110px] rounded-lg bg-blue-700 mx-[19px] mt-[15px] '></div>
+              <div className='mb-[20px]'>
+                <p className='text-white font-bold text-deuns-xs text-left mx-[15px] mt-[7px]'>Investir dans l'ancien</p>
+                <div className='text-custom-gray arrow-disapear flex place-items-center justify-end mx-[15px]'>
+                  <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <p></p>
           </div>
         </div>
 

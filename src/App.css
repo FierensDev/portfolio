@@ -167,13 +167,16 @@
 .border-container:hover .arrow-disapear{
   animation: arrow-disapear 0.8s linear;
 }
+
 /* remove the animations for pple that dont want it */
 /* @media (prefers-reduced-motion: no-preference){
 
 } */
 
 .card-glass-effect{
+  width: fit-content;
+  z-index: 10;
   border: 1px solid #363636;
-  border-radius: 10rem;
+  border-radius: 10px;
   background-color: rgba(39, 39, 39, .32);
 }
