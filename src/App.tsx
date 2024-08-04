@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+
+
 import { Navbar } from './components/Navbar/Navbar';
 import { Weather } from './components/Weather/Weather';
 import { ProjectCard } from './components/ProjectCard/ProjectCard';
+import { GifCard } from './components/GifCard/GifCard';
+
 import profilePicture from './assets/tower101.png'
 import IDLAmontage from './assets/IDLAmontage.jpg'
 
@@ -103,17 +107,6 @@ function App() {
 
           <div className=''>
             {/* content */}
-            {/* <div className='card-glass-effect border-container'>
-              <div className='w-[110px] h-[110px] rounded-lg bg-blue-700 mx-[15px] mt-[15px]'></div>
-              <div className='mb-[20px] bg-green-100'>
-                <p className='text-white font-bold text-deuns-xs text-left mx-[15px] mt-[7px] break-words whitespace-normal'>Investir dans l'ancien</p>
-                <div className='text-custom-gray arrow-disapear flex place-items-center justify-end mx-[15px]'>
-                  <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-              </div>
-            </div> */}
 
             <div className='bg-gray-200 grid grid-cols-[40%,1fr] w-[calc(100vw-24px)] ml-[-24px]'>
 
@@ -122,17 +115,9 @@ function App() {
                 <h3>INVESTIR DANS L'ANCIEN</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur iste cupiditate quasi unde deserunt quam quae. Ex mollitia quam repellendus laborum magni necessitatibus recusandae deleniti quas dolorem impedit.</p>
               </div>
-              {/* <div className='card-glass-effect border-container box-border p-[15px]'>
-                <div className='w-full h-[110px] rounded-lg bg-blue-700'></div>
-                <div className='bg-green-100'>
-                  <p className='text-white font-bold text-deuns-xs text-left break-words whitespace-normal'>Investir dans l'ancien</p>
-                  <div className='text-custom-gray arrow-disapear flex place-items-center justify-end '>
-                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </div>
-                </div>
-              </div> */}
+              <div className='absolute w-[130px]'>
+                <GifCard />
+              </div>
             </div>
 
 
