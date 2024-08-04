@@ -7,6 +7,7 @@ import { Weather } from './components/Weather/Weather';
 import { ProjectCard } from './components/ProjectCard/ProjectCard';
 import { GifCard } from './components/GifCard/GifCard';
 
+import idlamontageH from './assets/idlamontageH.jpg'
 import profilePicture from './assets/tower101.png'
 import IDLAmontage from './assets/IDLAmontage.jpg'
 
@@ -108,7 +109,7 @@ function App() {
           <div className=''>
             {/* content */}
 
-            <div className='bg-gray-200 grid grid-cols-[40%,1fr] w-[calc(100vw-24px)] ml-[-24px]'>
+            {/* <div className='bg-gray-200 grid grid-cols-[40%,1fr] w-[calc(100vw-24px)] ml-[-24px]'>
 
               <img src={IDLAmontage} alt="IDLA website in a window on a laptop" />
               <div className='bg-blue-400 px-2'>
@@ -117,6 +118,33 @@ function App() {
               </div>
               <div className='absolute w-[130px]'>
                 <GifCard />
+              </div>
+            </div> */}
+
+            <div className='bg-red-400 card-gif rounded-xl overflow-hidden'>
+              <div className='flex justify-center place-items-center h-full hover-img-effect'>
+                <img src={idlamontageH} alt="idla website on a laptop screen" className='w-full h-full' />
+                {/* <svg id="Groupe_886" data-name="Groupe 886" width="50" height="50" viewBox="0 0 100 100.001">
+                  <defs>
+                    <clipPath id="clip-path">
+                      <rect id="Rectangle_744" data-name="Rectangle 744" width="100" height="100.001" fill="none" />
+                    </clipPath>
+                  </defs>
+                  <g id="Groupe_885" data-name="Groupe 885" clip-path="url(#clip-path)">
+                    <path id="Tracé_9722" data-name="Tracé 9722"
+                      d="M25.99,88.841H11.977a.817.817,0,0,1-.817-.817V11.978a.817.817,0,0,1,.817-.817H25.99a.817.817,0,0,0,.817-.817V.818A.817.817,0,0,0,25.99,0H.817A.816.816,0,0,0,0,.818V99.185A.816.816,0,0,0,.817,100H25.99a.817.817,0,0,0,.817-.817V89.659a.817.817,0,0,0-.817-.817"
+                      transform="translate(0 0)" fill="#c49e69" />
+                    <path id="Tracé_9723" data-name="Tracé 9723"
+                      d="M123.167.817v9.526a.817.817,0,0,0,.817.817H138a.817.817,0,0,1,.817.817V88.024a.817.817,0,0,1-.817.817H123.984a.817.817,0,0,0-.817.817v9.527a.817.817,0,0,0,.817.816h25.173a.816.816,0,0,0,.816-.816V.817A.817.817,0,0,0,149.158,0H123.984a.817.817,0,0,0-.817.817"
+                      transform="translate(-49.974)" fill="#c49e69" />
+                    <path id="Tracé_9724" data-name="Tracé 9724"
+                      d="M77.522,40.671l-7.317,5.478a.825.825,0,0,0-.33.661V57.6a.825.825,0,0,0,1.32.661l6.076-4.55a3.223,3.223,0,0,1,3.963.076l8.98,7.28a2.815,2.815,0,0,1,1.042,2.186V89.111a.825.825,0,0,0,.825.825h8.638a.825.825,0,0,0,.825-.825V58.349a2.816,2.816,0,0,0-1.042-2.186L81.485,40.747a3.225,3.225,0,0,0-3.963-.076"
+                      transform="translate(-28.351 -16.241)" fill="#c49e69" />
+                    <path id="Tracé_9725" data-name="Tracé 9725"
+                      d="M45.408,91.209a.95.95,0,0,1-.3-.7V44.637a.915.915,0,0,1,.3-.745,1.059,1.059,0,0,1,.7-.248h9.136a.877.877,0,0,1,.993.994V90.514a1.059,1.059,0,0,1-.248.7.915.915,0,0,1-.745.3H46.1a.95.95,0,0,1-.7-.3"
+                      transform="translate(-18.303 -17.708)" fill="#c49e69" />
+                  </g>
+                </svg> */}
               </div>
             </div>
 
