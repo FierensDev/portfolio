@@ -14,6 +14,11 @@ import { SectionIndicator } from './components/Molecules/SectionIndicator/Sectio
 import { ImageOnSquare } from './components/Atoms/ImageOnSquare/ImageOnSquare';
 
 import epitechSvg from './assets/epitech.svg'
+import { ShadowText } from './components/Atoms/ShadowText/ShadowText';
+import { ShadowGradientOnDiv } from './components/Atoms/ShadowGradientOnDiv/ShadowGradientOnDiv';
+import { PictureProfile } from './components/Molecules/PictureProfile/PictureProfile';
+import { ArrowLink } from './components/Atoms/ArrowLink/ArrowLink';
+import { ButtonAnimated } from './components/Molecules/ButtonAnimated/ButtonAnimated';
 
 function App() {
 
@@ -88,34 +93,25 @@ function App() {
 
           <div>
             <div className='relative z-10'>
-            <p className='text-left text-deuns-m font-light gradient-black-70 w-fit'>Based in London/UK, 9+ years of experience across Product Design disciplines(UI, UX and Branding). A passionate designer and I love what I do, and I strongly believe in;  "The less it is the cooler is your interface"</p>
+              <ShadowText content="Je suis un francais, passionné de developpement informatique et spécialisé dans le web blablablablabla, je cherche juste a mettre des espaces pour que ca soit plus clair pour tout le monde et pour que mon animation ne me joue pas des tours"/>
             </div>
 
-            <div className='relative'>
-              <div className='absolute inset-0 z-10 bg-gradient-to-t from-black via-transparent to-transparent rounded-xl fade-in'></div>
-              <img src={profilePicture} alt="me with the tower 101 in the background" className='rounded-xl fade-in '/>
-            </div>
+            <PictureProfile picture={profilePicture} pictureAlt="me with the tower 101 in the background"/>
 
             <div className='h-[100px]'></div>
-
-            <div className='m-auto relative flex place-items-center justify-center w-fit p-[2px] border-container'>
-              <div className='bg-white w-[50%] h-full absolute border-to-right'></div>
-              <div className='bg-black flex relative p-4'>
-                <p className='text-custom-gray text-deuns-xs font-light'>A propos de moi</p>
-                <div className='text-custom-gray arrow-disapear'>
-                  <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <footer>
-azeazer
-            </footer>
+              <ButtonAnimated/>
           </div>
         </div>
 
+        <div>
+          <SectionIndicator title="contact"/>
+
+          <ShadowText content="N'hésitez pas a me contacter"/>
+
+          <form>
+            <input type="text"  />
+          </form>
+        </div>
         <Navbar />
       </main>
     </div>
