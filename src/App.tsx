@@ -9,6 +9,9 @@ import multipleProjects from './assets/multipleProjects.png'
 import { CurrentTime } from './components/Atoms/CurrentTime/CurrentTime';
 import { Navbar } from './components/Organisms/Navbar/Navbar';
 import { IntroText } from './components/Atoms/IntroText/IntroText';
+import { HorizontalLine } from './components/Atoms/HorizontalLine/HorizontalLine';
+import { SectionIndicator } from './components/Molecules/SectionIndicator/SectionIndicator';
+import { ImageOnSquare } from './components/Atoms/ImageOnSquare/ImageOnSquare';
 
 function App() {
 
@@ -54,25 +57,22 @@ function App() {
         <IntroText/>
 
         <div className='h-[100px]'></div>
+
         <div>scroll y technos</div>
+
         <div className='h-[100px]'></div>
 
         <div className=''>
-          <div className='flex place-items-center mb-5'>
-            <p className='pr-3 text-deuns-xs'>projects</p>
-            <div className='h-[1px] w-full bg-custom-gray'></div>
-          </div>
+          <SectionIndicator title='projects'/>
 
           <div className='grid gap-4'>
 
-            <div className='bg-red-400 relative card-gif rounded-xl overflow-hidden'>
-              <div className='absolute top-[calc(50%-40px)] left-[calc(50%-90px)] w-[177px] z-10'>
-                <img src="https://marketplace.investirdanslancien.fr/idla-gold.svg" alt="Logo company investir dans l'ancien" />
-              </div>
-              <div className='flex justify-center place-items-center h-full hover-img-effect'>
-                <img src={idlamontageH} alt="idla website on a laptop screen" className='w-full h-full' />
-              </div>
-            </div>
+            <ImageOnSquare 
+            background={idlamontageH} 
+            backgroundAlt="Logo company investir dans l'ancien"
+            logo="https://marketplace.investirdanslancien.fr/idla-gold.svg"
+            logoAlt="idla website on a laptop screen"
+            />
 
             <div className='bg-red-400 relative card-gif rounded-xl overflow-hidden'>
               <div className='absolute top-[calc(50%-40px)] left-[calc(50%-90px)] w-[177px] z-10'>
@@ -84,14 +84,13 @@ function App() {
                 <img src={multipleProjects} alt="idla website on a laptop screen" className='w-full h-full' />
               </div>
             </div>
+
+            
           </div>
         </div>
 
         <div>
-          <div className='flex place-items-center'>
-            <p className='pr-3 text-deuns-xs'>about</p>
-            <div className='h-[1px] w-full bg-custom-gray'></div>
-          </div>
+          <SectionIndicator title='a propos'/>
 
           <div>
             <div className='relative z-10'>
