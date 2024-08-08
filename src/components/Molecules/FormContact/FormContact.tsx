@@ -25,11 +25,11 @@ export function FormContact(){
       <InputText type="text" name="name" placeholder="Nom"/>
       <InputText type="email" name="email" placeholder="Email"/>
       <textarea 
-        className="bg-transparent text-white placeholder-gray-500 border-b-white border-b-2  outline-none"
+        className="bg-transparent text-white placeholder-gray-500 border-b-white border-b-2  outline-none min-h-[150px]"
         name="message" id="message" placeholder="Message" onKeyUp={handleTextAreaHeight}
       ></textarea>
       
-      <div className="parent relative border border-white h-[40px]">
+      <div className="parent relative border border-white h-[50px]">
         <div className="bg-white white-bg-bot-to-top"></div>
         <div className='bg-transparent absolute inset-0'>
           <button className="w-full h-full change-text-color">submit</button>

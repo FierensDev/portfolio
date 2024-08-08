@@ -111,6 +111,11 @@ function App() {
           <ShadowText content="N'hésitez pas à me contacter à tout moment, je vous répondrai dès que possible"/>
 
           <FormContact />
+          <div className='h-[100px]'></div>
+
+          
+          
+          <div className='h-[100px]'></div>
         </div>
         <Navbar />
       </main>

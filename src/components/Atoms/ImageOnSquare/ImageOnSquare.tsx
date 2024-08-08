@@ -1,3 +1,4 @@
+import './ImageOnSquare.css'
 
 interface ImageOnSquareProps {
   background: string;
@@ -8,7 +9,7 @@ interface ImageOnSquareProps {
 
 export function ImageOnSquare({background, backgroundAlt, logo, logoAlt}: ImageOnSquareProps){
   return (
-    <div className='relative card-gif rounded-xl overflow-hidden'>
+    <div className='parentImageOnSquare relative card-gif rounded-xl overflow-hidden'>
       <div className='absolute top-[calc(50%-40px)] left-[calc(50%-90px)] w-[177px] z-10'>
         <img src={logo} alt={logoAlt} />
       </div>
