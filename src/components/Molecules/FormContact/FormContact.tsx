@@ -1,3 +1,4 @@
+import { InputText } from '../../Atoms/InputText/InputText';
 import './FormContact.css'
 
 export function FormContact(){
@@ -21,9 +22,12 @@ export function FormContact(){
 
   return (
     <form onSubmit={handleForm} className=" grid grid-rows-[50px,50px,1fr] gap-3 text-blue-700">
-      <input className="bg-transparent text-white placeholder-white border-b-white border-b-2  outline-none" type="text" name="name" id="name" placeholder="Nom"/>
-      <input className="bg-transparent text-white placeholder-white border-b-white border-b-2  outline-none" type="email" name="email" id="email" placeholder="Email"/>
-      <textarea className="bg-transparent text-white placeholder-white border-b-white border-b-2 min-h-[100px] outline-none" name="message" id="message" placeholder="Message" onKeyUp={handleTextAreaHeight}></textarea>
+      <InputText type="text" name="name" placeholder="Nom"/>
+      <InputText type="email" name="email" placeholder="Email"/>
+      <textarea 
+        className="bg-transparent text-white placeholder-gray-500 border-b-white border-b-2  outline-none"
+        name="message" id="message" placeholder="Message" onKeyUp={handleTextAreaHeight}
+      ></textarea>
       
       <div className="parent relative border border-white h-[40px]">
         <div className="bg-white white-bg-bot-to-top"></div>

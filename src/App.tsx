@@ -19,7 +19,7 @@ import { ShadowGradientOnDiv } from './components/Atoms/ShadowGradientOnDiv/Shad
 import { PictureProfile } from './components/Molecules/PictureProfile/PictureProfile';
 import { ArrowLink } from './components/Atoms/ArrowLink/ArrowLink';
 import { ButtonAnimated } from './components/Molecules/ButtonAnimated/ButtonAnimated';
-import { FormContact } from './components/Organisms/FormContact/FormContact';
+import { FormContact } from './components/Molecules/FormContact/FormContact';
 
 function App() {
 
