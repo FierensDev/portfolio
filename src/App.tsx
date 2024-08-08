@@ -20,6 +20,7 @@ import { PictureProfile } from './components/Molecules/PictureProfile/PicturePro
 import { ArrowLink } from './components/Atoms/ArrowLink/ArrowLink';
 import { ButtonAnimated } from './components/Molecules/ButtonAnimated/ButtonAnimated';
 import { FormContact } from './components/Molecules/FormContact/FormContact';
+import { LinkSquare } from './components/Atoms/LinkSquare/LinkSquare';
 
 function App() {
 
@@ -94,7 +95,7 @@ function App() {
 
           <div>
             <div className='relative z-10'>
-              <ShadowText content="Je suis un francais, passionné de developpement informatique et spécialisé dans le web blablablablabla, je cherche juste a mettre des espaces pour que ca soit plus clair pour tout le monde et pour que mon animation ne me joue pas des tours"/>
+              <ShadowText content="Je suis Denis, un développeur full stack, je maîtrise plusieurs langages HTML/CSS, Javascript, Typescript, PHP, Java, SQL, et bien d'autres ! "/>
             </div>
 
             <PictureProfile picture={profilePicture} pictureAlt="me with the tower 101 in the background"/>
@@ -113,7 +114,11 @@ function App() {
           <FormContact />
           <div className='h-[100px]'></div>
 
-          
+          <div className='grid grid-rows-3 gap-8'>
+            <LinkSquare />
+            <LinkSquare />
+            <LinkSquare />
+          </div>
           
           <div className='h-[100px]'></div>
         </div>
