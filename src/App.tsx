@@ -19,6 +19,7 @@ import { ShadowGradientOnDiv } from './components/Atoms/ShadowGradientOnDiv/Shad
 import { PictureProfile } from './components/Molecules/PictureProfile/PictureProfile';
 import { ArrowLink } from './components/Atoms/ArrowLink/ArrowLink';
 import { ButtonAnimated } from './components/Molecules/ButtonAnimated/ButtonAnimated';
+import { FormContact } from './components/Organisms/FormContact/FormContact';
 
 function App() {
 
@@ -106,11 +107,10 @@ function App() {
         <div>
           <SectionIndicator title="contact"/>
 
-          <ShadowText content="N'hésitez pas a me contacter"/>
+          <h3 className='text-[1.8rem]'>Contactez moi</h3>
+          <ShadowText content="N'hésitez pas à me contacter à tout moment, je vous répondrai dès que possible"/>
 
-          <form>
-            <input type="text"  />
-          </form>
+          <FormContact />
         </div>
         <Navbar />
       </main>

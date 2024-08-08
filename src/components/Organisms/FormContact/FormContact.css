@@ -1,0 +1,22 @@
+.white-bg-bot-to-top{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 90%;
+
+  transition: top 0.3s;
+}
+
+.change-text-color{
+  color: white;
+  transition: color 1s;
+}
+
+.parent:hover .white-bg-bot-to-top{
+  top: 0%;
+}
+
+.parent:hover .change-text-color{
+  color: black;
+}
