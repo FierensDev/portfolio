@@ -75,7 +75,7 @@ function App() {
           <SectionIndicator title='projects'/>
 
           <div className='grid gap-4'>
-            <ImageOnSquare 
+            <Imagegit OnSquare 
             background={idlamontageH} 
             backgroundAlt="Logo company investir dans l'ancien"
             logo="https://marketplace.investirdanslancien.fr/idla-gold.svg"
