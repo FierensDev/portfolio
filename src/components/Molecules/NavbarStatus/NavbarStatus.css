@@ -1,6 +1,9 @@
 .navbar-status {
+  width: auto;
+  max-width: 1024px;
+  margin: auto;
   height: 17px;
-  /* background: blue; */
+  
   display: flex;
   justify-content: space-between;
   align-items: end;

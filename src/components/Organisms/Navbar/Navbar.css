@@ -130,8 +130,7 @@
 
 /* desktop */
 @media (min-width: 1024px){
-  .navbar {
-  }
+
 
   .navbar__main{
     width: auto;
