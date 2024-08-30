@@ -1,78 +1,46 @@
 import { useState } from "react";
+import { Burger } from "../../Atoms/burger/Burger";
 import './Navbar.css'
+import { NavbarStatus } from "../../Molecules/NavbarStatus/NavbarStatus";
 
-export function Navbar() {
-
+export function Navbar(){
   const [displayNavbar, setDisplayNavbar] = useState<boolean>(false)
-
+  
   function handlerDisplayNavbar(){
     setDisplayNavbar(!displayNavbar);
   }
 
-  return (
-    <nav>
-      {displayNavbar === true ? 
-        <div className="fixed top-0 left-0 right-0 anime-extend-menu z-50">
-          <div className="absolute inset-0 w-full z-10 bg-black bg-opacity-70 backdrop-blur-sm">
-          </div>
-          <div className="relative flex flex-col px-[24px] py-[16px] z-20">
-            <div className="w-full flex justify-between place-items-center">
-              <p className="text-white">Denis Fierens</p>
-              <svg 
-                onClick={() => {
-                  console.log('hi1');
-                  handlerDisplayNavbar()
-                }}
-                width="15.4" height="12.6" viewBox="0 0 11 9" fill="none" className="text-white"  xmlns="http://www.w3.org/2000/svg"
-                >
-                <line className="anime-top-line" y1="0.5" x2="11" y2="0.5" stroke="currentColor" strokeWidth={2}/>
-                <line className="anime-bottom-line" y1="8.5" x2="11" y2="8.5" stroke="currentColor" strokeWidth={2}/>
-              </svg>
-            </div>
+  return(
+      <nav className={displayNavbar ? `navbar anime-extend-menu` : `navbar anime-extend-menu-reverse` }>
+        <div className="navbar__main">
+          <a href="#">
+            <h1>Denis Fierens</h1>
+          </a>
 
-            <div className="text-custom-gray w-full h-[200px] text-right text-deuns-m">
-              <p className="pt-[35px]">projects</p>
-              <p className="pt-[35px]">about</p>
-              <p className="pt-[35px]">contact</p>
-            </div>
+          <div className="navbar__main__content__burger">
+            <Burger handleDisplayNavbar={handlerDisplayNavbar} displayNavbar={displayNavbar}/>
           </div>
-          <div className=' h-[4px] w-full px-[24px]'>
-            <div className="bg-custom-gray h-[4px] w-full"></div>
-            <div className="bg-gray-400 h-[1px] w-[30%]"></div>
+          <div className="navbar__main__content__display-menu">
+            <a href="#">projets</a>
+            <a href="#">a propos</a>
+            <a href="#">me contacter</a>
+          </div>  
+          <div className={displayNavbar ? `hide-element` : `progress-bar` }>
           </div>
         </div>
-      :
-        <div className="fixed top-0 left-0 right-0 anime-extend-menu-reverse z-50">
-          <div className="absolute inset-0 w-full z-10 bg-black bg-opacity-70 backdrop-blur-sm">
-          </div>
-          <div className="relative flex justify-between place-items-center px-[24px] py-[16px] z-20">
-            <p className="text-white">Denis Fierens</p>
-            
-            <div className="md:hidden">
-              <svg 
-                onClick={() => {
-                  handlerDisplayNavbar()
-                }}
-                width="15.4" height="12.6" viewBox="0 0 11 9" fill="none"  className="text-custom-gray" xmlns="http://www.w3.org/2000/svg"
-                >
-                <line className="anime-top-line-reverse" y1="0.5" x2="11" y2="0.5" stroke="currentColor" strokeWidth={2} />
-                <line className="anime-bottom-line-reverse" y1="8.5" x2="11" y2="8.5" stroke="currentColor" strokeWidth={2} />
-              </svg>
-            </div>
 
-            <div className="hidden md:flex text-custom-gray">
-                <p>projects</p>
-                <p className="mx-[35px]">about</p>
-                <p>contact</p>
-            </div>
+        {
+          displayNavbar ? 
+          <div className="navbar__display-menu">
+            <a href="#" onClick={handlerDisplayNavbar}>projets</a>
+            <a href="#" onClick={handlerDisplayNavbar}>a propos</a>
+            <a href="#" onClick={handlerDisplayNavbar}>me contacter</a>
           </div>
-          <div className="relative bottom-0 z-30 w-full h-[2px] px-[24px]">
-            <div className="bg-custom-gray w-full h-full">
-              <div className="w-full h-full scroll-watcher"></div>
-            </div>
-          </div>
-        </div>
-      }
+          :
+          <></>
+        }
+      
+      
     </nav>
-  );
+  )
 }

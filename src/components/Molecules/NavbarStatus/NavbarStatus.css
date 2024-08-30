@@ -1,0 +1,25 @@
+.navbar-status {
+  height: 17px;
+  /* background: blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.navbar-status__location {
+  text-align: right;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 8px;
+}
+
+@media (min-width: 768px){
+  .navbar-status {
+    height: 28px;
+  }
+}
+
+@media (min-width: 1024px){
+
+}
+
