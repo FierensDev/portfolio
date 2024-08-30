@@ -32,6 +32,58 @@
   flex-direction: column;
 }
 
+
+.projet__item{
+  height: auto;
+  width: 100%;
+  background: #181818;
+
+  border-radius: 8px;
+
+  padding: 24px;
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projet__item__icon{
+  background: gray;
+  width: 35px;
+  height: 35px;
+
+}
+
+.projet__item__photo{
+  background: blue;
+  width: 170px;
+  height: 110px;
+  border-radius: 8px;
+
+  transform: translate(0, -30px) rotate(-10deg);
+  
+}
+
+.projet__item__title{
+  font-family: 'Monument';
+  font-size: 27px;
+  padding: 16px 0;
+}
+
+.projet__item__description{
+  font-family: 'SF Pro Display';
+  font-size: 20px;
+  color: var(--color-subtitle);
+}
+
+.idla{
+  color: var(--color-IDLA);
+}
+
 @media (min-width: 768px){
   .container {
     padding: 0 22px;

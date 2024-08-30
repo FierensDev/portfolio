@@ -33,6 +33,15 @@ function App() {
           <SliderTech />
 
           <Separator title='projets'/>
+
+          <div className='projet__item'>
+            <div className='flex'>
+              <div className='projet__item__icon'></div>
+              <div className='projet__item__photo'></div>
+            </div>
+            <div className='projet__item__title idla'>INVESTIR DANS <br /> L'ANCIEN</div>
+            <div className='projet__item__description'><span className='projet__item__description idla'>Site web</span> pour une société faisant de l'investissement locatif</div>
+          </div>
         </div>
 
 
