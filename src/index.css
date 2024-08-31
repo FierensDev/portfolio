@@ -48,10 +48,14 @@ code {
  display: none;
 }
 
+p{
+  margin: 0;
+}
+
 .adapt-to-container{
   width: 100%;
   max-width: 1024px;
-  margin: auto;
+  margin: 0px auto;
 }
 
 .text-h2{
@@ -61,7 +65,37 @@ code {
   margin: 0;
 }
 
+.text-h3{
+  font-family:'SF Pro Display';
+  font-size: var(--font-size-h3);
+  font-weight: 500;
+  margin: 0;
+}
+
+.text-lg{
+  font-family:'SF Pro Display';
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  margin: 0;
+}
+
+.text-20{
+  font-family:'SF Pro Display';
+  font-size: var(--font-size-20);
+  font-weight: 400;
+  margin: 0;
+}
+.text-base{
+  font-family:'SF Pro Display';
+  font-weight: 400;
+  margin: 0;
+}
+
 .text-color-text {
+  color: var(--color-text);
+}
+
+.color-white{
   color: var(--color-text);
 }
 
@@ -110,6 +144,14 @@ a {
   font-size: var(--font-size-sm);
   color: var(--color-text);
   font-weight: 600;
+}
+
+.hide-phone {
+  display: none;
+}
+
+.hide-tablet {
+  display: block;
 }
 
 @keyframes move-text-to-top{
@@ -176,6 +218,14 @@ a {
     place-items: center;
     justify-content: center;
     gap: 16px;
+  }
+
+  .hide-phone{
+    display: block;
+  }
+
+  .hide-tablet {
+    display: none;
   }
 }
 

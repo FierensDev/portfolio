@@ -6,8 +6,10 @@
 }
 
 .separator__title{
+  width: fit-content;
   color: var(--color-subtitle);
   font-size: var(--font-size-sm);
+  white-space: nowrap;
 }
 
 .separator__line{
