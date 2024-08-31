@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ba5f1326.css",
-    "main.js": "/portfolio/static/js/main.bdec2c89.js",
+    "main.css": "/portfolio/static/css/main.d710d9a3.css",
+    "main.js": "/portfolio/static/js/main.33be3fb0.js",
     "static/media/tower101.png": "/portfolio/static/media/tower101.e1a25071977120795e91.png",
     "static/media/idlamontageH.jpg": "/portfolio/static/media/idlamontageH.7394a5f2c3aa2bfb81b8.jpg",
-    "static/media/multipleProjects.png": "/portfolio/static/media/multipleProjects.19f2539c38bcf3444a93.png",
+    "static/media/postgresql.svg": "/portfolio/static/media/postgresql.0a1cd63187e8637a82d7d1e5d760bc3f.svg",
+    "static/media/epitech-eu.svg": "/portfolio/static/media/epitech-eu.960770ae308778fbb9fd3848cd060efb.svg",
+    "static/media/next.svg": "/portfolio/static/media/next.8ad26de1c1e1e9f72d6d603b24794112.svg",
+    "static/media/idlaPhoneSize.svg": "/portfolio/static/media/idlaPhoneSize.c8ca6ab540904deab63acbb628d78112.svg",
     "index.html": "/portfolio/index.html",
-    "main.ba5f1326.css.map": "/portfolio/static/css/main.ba5f1326.css.map",
-    "main.bdec2c89.js.map": "/portfolio/static/js/main.bdec2c89.js.map"
+    "main.d710d9a3.css.map": "/portfolio/static/css/main.d710d9a3.css.map",
+    "main.33be3fb0.js.map": "/portfolio/static/js/main.33be3fb0.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba5f1326.css",
-    "static/js/main.bdec2c89.js"
+    "static/css/main.d710d9a3.css",
+    "static/js/main.33be3fb0.js"
   ]
 }
