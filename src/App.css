@@ -57,6 +57,12 @@
   justify-content: space-between;
 }
 
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .projet__item__icon{
   width: 35px;
   height: 35px;
@@ -191,6 +197,8 @@ button:hover .button__content {
 
   justify-content: center;
   align-items: center;
+  gap: 16px;
+  padding: 16px 0px;
 }
 
 .footer__website {
@@ -205,6 +213,7 @@ button:hover .button__content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 8px;
 }
 
 .footer__contact{
@@ -212,6 +221,12 @@ button:hover .button__content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 8px;
+}
+
+.footer__social-media{
+  display: flex;
+  gap: 32px;
 }
 
 

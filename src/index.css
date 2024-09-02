@@ -1,7 +1,8 @@
 :root {
   --color-bg: #000000;
   --color-text: #FFFFFF;
-  --color-subtitle: #9E9E9E;
+  --color-subtitle: #808080;
+  --color-subtitle2: #404040;
   --color-IDLA: #C49E69;
 
   --font-family-sfprodisplay: 'SF Pro Display', sans-serif;
@@ -19,7 +20,23 @@
   --font-size-navbar-menu: 1.5rem; /*24px 16px 16px*/
 }
 
+::selection {
+  background: rgba(255, 0, 0, 0.5);
+  color: white;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Cache tout débordement horizontal */
+}
+
+.text-color{
+  color: var(--color-subtitle2);
+}
+
 body {
+  background: var(--color-bg);
   color: var(--color-text);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -32,6 +49,8 @@ body {
 h1 {
   color: var(--color-text);
   font-size: var(--font-size-h1);
+  font-family: 'SF Pro Display';
+  font-weight: 400;
 }
 
 span {
@@ -50,6 +69,12 @@ code {
 
 p{
   margin: 0;
+}
+
+
+.onhover-color-white:hover{
+  cursor: pointer;
+  color: white;
 }
 
 .adapt-to-container{
@@ -97,6 +122,10 @@ p{
 
 .color-white{
   color: var(--color-text);
+}
+
+.color-subtitle2{
+  color: var(--color-subtitle2);
 }
 
 a {
@@ -154,6 +183,18 @@ a {
   display: block;
 }
 
+.font-normal{
+  font-weight: 400;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
 @keyframes move-text-to-top{
   0%{
     transform: translateY(0px);
@@ -172,11 +213,25 @@ a {
   }
 }
 
-
 .move-text-to-top{
   animation: move-text-to-top 5s infinite;
 }
 
+@keyframes opacity-100-to-0{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.opacity-100-to-0{
+  animation: opacity-100-to-0 1s infinite;
+}
 
 @media (min-width: 768px){
 

@@ -21,20 +21,21 @@ export function Navbar(){
             <Burger handleDisplayNavbar={handlerDisplayNavbar} displayNavbar={displayNavbar}/>
           </div>
           <div className="navbar__main__content__display-menu">
-            <a href="#">projets</a>
-            <a href="#">a propos</a>
-            <a href="#">me contacter</a>
+            <a className="onhover-color-white" href="#">projets</a>
+            <a className="onhover-color-white" href="#">a propos</a>
+            <a className="onhover-color-white" href="#">me contacter</a>
           </div>  
           <div className={displayNavbar ? `hide-element` : `progress-bar` }>
+            <div className="scroll-watcher"></div>
           </div>
         </div>
 
         {
           displayNavbar ? 
           <div className="navbar__display-menu">
-            <a href="#" onClick={handlerDisplayNavbar}>projets</a>
-            <a href="#" onClick={handlerDisplayNavbar}>a propos</a>
-            <a href="#" onClick={handlerDisplayNavbar}>me contacter</a>
+            <a className="onhover-color-white" href="#" onClick={handlerDisplayNavbar}>projets</a>
+            <a className="onhover-color-white" href="#" onClick={handlerDisplayNavbar}>a propos</a>
+            <a className="onhover-color-white" href="#" onClick={handlerDisplayNavbar}>me contacter</a>
           </div>
           :
           <></>

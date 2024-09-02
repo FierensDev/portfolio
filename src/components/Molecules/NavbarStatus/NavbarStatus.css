@@ -12,8 +12,9 @@
 .navbar-status__location {
   text-align: right;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   gap: 8px;
+  place-items: center;
 }
 
 @media (min-width: 768px){
