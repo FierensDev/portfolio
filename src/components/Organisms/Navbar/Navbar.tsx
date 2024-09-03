@@ -21,9 +21,9 @@ export function Navbar(){
             <Burger handleDisplayNavbar={handlerDisplayNavbar} displayNavbar={displayNavbar}/>
           </div>
           <div className="navbar__main__content__display-menu">
-            <a className="onhover-color-white" href="#">projets</a>
-            <a className="onhover-color-white" href="#">a propos</a>
-            <a className="onhover-color-white" href="#">me contacter</a>
+            <a className="onhover-color-white" href="#section_project">projets</a>
+            <a className="onhover-color-white" href="#section_about">a propos</a>
+            <a className="onhover-color-white" href="#section_contact">me contacter</a>
           </div>  
           <div className={displayNavbar ? `hide-element` : `progress-bar` }>
             <div className="scroll-watcher"></div>
@@ -33,9 +33,9 @@ export function Navbar(){
         {
           displayNavbar ? 
           <div className="navbar__display-menu">
-            <a className="onhover-color-white" href="#" onClick={handlerDisplayNavbar}>projets</a>
-            <a className="onhover-color-white" href="#" onClick={handlerDisplayNavbar}>a propos</a>
-            <a className="onhover-color-white" href="#" onClick={handlerDisplayNavbar}>me contacter</a>
+            <a className="onhover-color-white" href="#section_project" onClick={handlerDisplayNavbar}>projets</a>
+            <a className="onhover-color-white" href="#section_about" onClick={handlerDisplayNavbar}>a propos</a>
+            <a className="onhover-color-white" href="#section_contact" onClick={handlerDisplayNavbar}>me contacter</a>
           </div>
           :
           <></>

@@ -43,7 +43,7 @@ function App() {
           <SliderTech />
           </div>
           <div className='delete'></div>
-          <Separator title='projets'/>
+          <Separator title='projets' id={"section_project"}/>
 
           <div className='grid_projet_items adapt-to-container'>
             <ProjectCard icon={IdlaIconPhoneSize} iconAlt="Investir dans l'ancien" img={IdlaBackground} imgAlt="Montage investir dans l'ancien" title1="Investir dans" title2="l'ancien" subtitle1="Site web" subtitle2="pour une société faisant de l'investissement locatif" color='#C49E69'/>
@@ -54,27 +54,27 @@ function App() {
           <div className='adapt-to-container'>
             <div className='about'>
               <div className='about__container'>
-                <Separator title='a propos'/>
+                <Separator title='a propos' id={"section_about"}/>
                 <h3 className='text-gradient text-lg'>Je suis Denis, un jeune français de 25 ans, passionné par le développement web, le sport et l'exploration du monde </h3>
-                <button className='button hide-phone'>
-                  <div className='button__content'>Télécharger mon CV</div>
-                  <div className='button__background-to-top'></div>
-                </button>
+                <a href="/assets/Fierens_Cv_Dev.pdf" download="Fierens_CV_DEV" className='button hide-phone'>
+                <div className='button__content'>Télécharger mon CV</div>
+                <div className='button__background-to-top'></div>
+              </a>
               </div>
 
               <div className='about__picture'>
                 <img className='about__picture__img' src={ProfilePicture} alt="photo de moi avec avec la tour 101" />
               </div>
 
-              <button className='button hide-tablet'>
+              <a href="/assets/Fierens_Cv_Dev.pdf" download="Fierens_CV_DEV" className='button hide-tablet'>
                 <div className='button__content'>Télécharger mon CV</div>
                 <div className='button__background-to-top'></div>
-              </button>
+              </a>
             </div>
           </div>
           <div className='delete'></div>
           <div className='contact adapt-to-container'>
-            <a href="#" className='contact__button text-h3 color-white'>Contactez moi</a>
+            <a href="#" className='contact__button text-h3 color-white' id="section_contact">Contactez moi</a>
             <div className='contact__separator'></div>
           </div>
 
