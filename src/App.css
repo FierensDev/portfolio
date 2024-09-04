@@ -164,11 +164,11 @@
   transition: top 0.3s ease;
 }
 
-button:hover .button__background-to-top {
+.button:hover .button__background-to-top {
   top: 10%;
 }
 
-button:hover .button__content {
+.button:hover .button__content {
   color: black;
 }
 
@@ -180,7 +180,23 @@ button:hover .button__content {
 }
 
 .contact__button{
+  height: fit-content;
+  display: flex;
+  place-items: center;
+  gap: 16px;
+}
 
+.contact__button:hover .rotate-45{
+  transform: rotate(45deg);
+}
+
+.rotate-45{
+  transition: transform .2s;
+}
+
+.arrow{
+  aspect-ratio : 1 / 1;
+  width: calc(var(--font-size-h3) - .55rem);
 }
 
 .contact__separator {

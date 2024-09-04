@@ -13,6 +13,8 @@ import ProfilePicture from './assets/tower101.png'
 import GithubIcon from './assets/github.svg'
 import InstagramIcon from './assets/instagram.svg'
 import LinkedinIcon from './assets/linkedin.svg'
+import ArrowSvg from './assets/arrow.svg'
+
 function App() {
 
   
@@ -74,20 +76,25 @@ function App() {
           </div>
           <div className='delete'></div>
           <div className='contact adapt-to-container'>
-            <a href="#" className='contact__button text-h3 color-white' id="section_contact">Contactez moi</a>
+            <a href="#" className='contact__button text-h3 color-white' id="section_contact">
+              <span className='text-h3 color-white'>Contactez moi</span>
+              <div className='arrow rotate-45'>
+                <img src={ArrowSvg} alt="arrow" />
+              </div>
+            </a>
             <div className='contact__separator'></div>
           </div>
 
           <div className='footer adapt-to-container'>
-              <a href="footer__website text-20 color-white">fierensdev.com</a>
+              <a className="footer__website text-20 color-white">fierensdev.com</a>
               
-              <div className='footer__navbar text-base'>
-                <a href="#">projets</a>
-                <a href="#">a propos</a>
-                <a href="#">contact</a>
+              <div className='footer__navbar text-base '>
+                <a className='text-color-text' href="#">projets</a>
+                <a className='text-color-text' href="#">a propos</a>
+                <a className='text-color-text' href="#">contact</a>
               </div>
 
-              <div className='footer__contact text-base'>
+              <div className='footer__contact text-base '>
                 <p>dev.fierens@gmail.com</p>
                 <p>06.60.97.30.82</p>
               </div>
