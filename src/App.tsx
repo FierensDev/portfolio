@@ -89,9 +89,9 @@ function App() {
               <a className="footer__website text-20 color-white">fierensdev.com</a>
               
               <div className='footer__navbar text-base '>
-                <a className='text-color-text' href="#">projets</a>
-                <a className='text-color-text' href="#">a propos</a>
-                <a className='text-color-text' href="#">contact</a>
+                <a className='onhover-color-white' href="#">projets</a>
+                <a className='onhover-color-white' href="#">a propos</a>
+                <a className='onhover-color-white' href="#">contact</a>
               </div>
 
               <div className='footer__contact text-base '>
@@ -105,6 +105,8 @@ function App() {
                 <img src={LinkedinIcon} alt="linkedin icon" />
               </div>
           </div>
+
+          
         </div>
       </main>
     </div>

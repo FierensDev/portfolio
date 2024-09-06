@@ -1,3 +1,18 @@
+.anime-top-line{
+  animation: rotate-left 0.5s forwards;
+}
+
+.anime-bottom-line{
+  animation: rotate-right 0.5s forwards;
+}
+
+.anime-bottom-line-reverse{
+  animation: rotate-right-reverse 0.5s forwards;
+}
+
+.anime-top-line-reverse{
+  animation: rotate-left-reverse 0.5s forwards;
+}
 
 @keyframes rotate-left{
   0% {
@@ -41,20 +56,4 @@
     transform: rotate(0deg);
     transform-origin: 11px 9px;
   }
-}
-
-.anime-top-line{
-  animation: rotate-left 0.5s forwards;
-}
-
-.anime-bottom-line{
-  animation: rotate-right 0.5s forwards;
-}
-
-.anime-bottom-line-reverse{
-  animation: rotate-right-reverse 0.5s forwards;
-}
-
-.anime-top-line-reverse{
-  animation: rotate-left-reverse 0.5s forwards;
 }
