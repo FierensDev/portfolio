@@ -10,7 +10,7 @@ import { Home } from './components/Pages/Home/Home';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/portfolio',
     element: <Root />,
     errorElement: <h1>Create error page</h1>,
     children: [
@@ -19,13 +19,12 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: 'contact',
+        path: 'contact', // Chemin relatif
         element: <Contact />
       }
     ]
   }
 ]);
-
 function Root() {
   return (
     <div>
