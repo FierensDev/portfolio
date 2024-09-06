@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.b37d0d71.css",
-    "main.js": "/static/js/main.6de6b7ce.js",
-    "static/media/tower101.png": "/static/media/tower101.e1a25071977120795e91.png",
-    "static/media/idlamontageH.jpg": "/static/media/idlamontageH.7394a5f2c3aa2bfb81b8.jpg",
-    "static/media/instagram.svg": "/static/media/instagram.aa04545aeddfc8aa65335b21ec40be64.svg",
-    "static/media/epitech-eu.svg": "/static/media/epitech-eu.960770ae308778fbb9fd3848cd060efb.svg",
-    "static/media/idlaPhoneSize.svg": "/static/media/idlaPhoneSize.c8ca6ab540904deab63acbb628d78112.svg",
-    "static/media/github.svg": "/static/media/github.f3c1d7c7742b499054ede6d472932587.svg",
-    "static/media/linkedin.svg": "/static/media/linkedin.95d0c628b41c883711e59c2aa1f857f8.svg",
-    "index.html": "/index.html",
-    "static/media/arrow.svg": "/static/media/arrow.104ba50a67d4c1f5dd9247baceb58c2e.svg",
-    "main.b37d0d71.css.map": "/static/css/main.b37d0d71.css.map",
-    "main.6de6b7ce.js.map": "/static/js/main.6de6b7ce.js.map"
+    "main.css": "/portfolio/static/css/main.b37d0d71.css",
+    "main.js": "/portfolio/static/js/main.b938cb47.js",
+    "static/media/tower101.png": "/portfolio/static/media/tower101.e1a25071977120795e91.png",
+    "static/media/idlamontageH.jpg": "/portfolio/static/media/idlamontageH.7394a5f2c3aa2bfb81b8.jpg",
+    "static/media/instagram.svg": "/portfolio/static/media/instagram.aa04545aeddfc8aa65335b21ec40be64.svg",
+    "static/media/epitech-eu.svg": "/portfolio/static/media/epitech-eu.960770ae308778fbb9fd3848cd060efb.svg",
+    "static/media/idlaPhoneSize.svg": "/portfolio/static/media/idlaPhoneSize.c8ca6ab540904deab63acbb628d78112.svg",
+    "static/media/github.svg": "/portfolio/static/media/github.f3c1d7c7742b499054ede6d472932587.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.95d0c628b41c883711e59c2aa1f857f8.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/arrow.svg": "/portfolio/static/media/arrow.104ba50a67d4c1f5dd9247baceb58c2e.svg",
+    "main.b37d0d71.css.map": "/portfolio/static/css/main.b37d0d71.css.map",
+    "main.b938cb47.js.map": "/portfolio/static/js/main.b938cb47.js.map"
   },
   "entrypoints": [
     "static/css/main.b37d0d71.css",
-    "static/js/main.6de6b7ce.js"
+    "static/js/main.b938cb47.js"
   ]
 }
