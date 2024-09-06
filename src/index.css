@@ -166,6 +166,34 @@ a {
   font-weight: 600;
 }
 
+.spacer-50{
+  height: 50px;
+}
+.spacer-100{
+  height: 100px;
+}
+.spacer-200{
+  height: 200px;
+}
+
+.presentation{
+  margin: 64px 0;
+  display: grid;
+  gap: 64px;
+}
+
+.presentation__project{
+  display: grid;
+  gap: 16px;
+  margin: 80px 0;
+}
+
+.presentation__about{
+  display: grid;
+  gap: 16px;
+  margin: 80px 0;
+}
+
 @keyframes move-text-to-top{
   0%{
     transform: translateY(0px);

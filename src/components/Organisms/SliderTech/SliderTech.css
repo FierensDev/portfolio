@@ -6,5 +6,15 @@
 }
 
 .slider-tech::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
+}
+
+/* .animation-slide{
+  animation: slider 2s linear infinite;
+} */
+
+@keyframes slider{
+  to {
+    transform: translate(100%);
+  }
 }

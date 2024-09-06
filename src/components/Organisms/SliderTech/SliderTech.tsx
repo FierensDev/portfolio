@@ -5,7 +5,7 @@ import NextSVG from '../../../assets/next.svg'
 
 export function SliderTech(){
   return(
-    <div className='slider-tech'>
+    <div className='slider-tech animation-slide'>
       <SliderTechCard title={'PostgreSQL'} img={PostgreSQLSVG}/>
       <SliderTechCard title={'NextJS'} img={NextSVG}/>
       <SliderTechCard title={'PostgreSQL'} img={PostgreSQLSVG}/>
