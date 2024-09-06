@@ -1,0 +1,10 @@
+.slider-tech{
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  margin: 8px 0px;
+}
+
+.slider-tech::-webkit-scrollbar {
+  display: none;
+}

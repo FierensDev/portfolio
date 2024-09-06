@@ -1,0 +1,7 @@
+.status-bar{
+  height: 30px;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto auto;
+  gap: 8px;
+  place-items: center;
+}

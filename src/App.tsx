@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { Navbar } from './components/Organisms/Navbar/Navbar';
-import { NavbarStatus } from './components/Molecules/NavbarStatus/NavbarStatus';
+import { StatusBar } from './components/Molecules/StatusBar/StatusBar';
 import { SliderTech } from './components/Organisms/SliderTech/SliderTech';
 import { Separator } from './components/Atoms/Separator/Separator';
 import { ProjectCard } from './components/Molecules/ProjectCard/ProjectCard';
@@ -22,10 +22,10 @@ function App() {
     <div className="App">
       <Navbar/>
       <main className='bg-black'> 
-        <div className="navbar-fake"></div>
+        <div className="navbar__spacer"></div>
 
         <div className='container'>
-          <NavbarStatus />
+          <StatusBar />
 
           <div className='delete'></div>
 

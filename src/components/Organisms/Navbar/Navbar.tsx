@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Burger } from "../../Atoms/burger/Burger";
 import './Navbar.css'
-import { NavbarStatus } from "../../Molecules/NavbarStatus/NavbarStatus";
 
 export function Navbar(){
   const [displayNavbar, setDisplayNavbar] = useState<boolean>(false)
