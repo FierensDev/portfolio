@@ -16,7 +16,7 @@ export function Navbar(){
     
  
     
-    <Link to="/">
+    <Link to="/portfolio">
       <h1>Denis Fierens</h1>
     </Link>
 
@@ -26,7 +26,7 @@ export function Navbar(){
     <div className="navbar__main__links">
       <a className="onhover-color-white" href="#section_project">projets</a>
       <a className="onhover-color-white" href="#section_about">a propos</a>
-      <Link className="onhover-color-white" to="/contact">me contacter</Link>
+      <Link className="onhover-color-white" to="/portfolio/contact">me contacter</Link>
     </div>  
     <div className={displayNavbar ? `hide-element` : `navbar__main__progress-bar` }>
       <div className="navbar__main__progress-bar__scroll-watcher"></div>
@@ -38,7 +38,7 @@ export function Navbar(){
     <div className="navbar__burger-menu-open">
       <a className="onhover-color-white" href="#section_project" onClick={handlerDisplayNavbar}>projets</a>
       <a className="onhover-color-white" href="#section_about" onClick={handlerDisplayNavbar}>a propos</a>
-      <Link className="onhover-color-white" to="/contact" onClick={handlerDisplayNavbar}>me contacter</Link>
+      <Link className="onhover-color-white" to="/portfolio/contact" onClick={handlerDisplayNavbar}>me contacter</Link>
     </div>
     :
     <></>

@@ -93,3 +93,14 @@
 .test {
   color: white;
 }
+
+.container__social-media{
+  display: grid;
+  gap: 32px;
+}
+
+@media (min-width: 768px){
+  .container__social-media{
+    grid-template-columns: 1fr auto;
+  }
+}
