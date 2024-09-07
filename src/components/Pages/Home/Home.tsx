@@ -72,8 +72,8 @@ export function Home(){
               </div>
             </div>
           </div>
-
-          <div className='contact adapt-to-container'>
+         
+          <div className="adapt-to-container contact_1">
             <a href="#" className='contact__button text-h3 color-white' id="section_contact">
               <span className='text-h3 color-white'>Contactez moi</span>
               <div className='arrow rotate-45'>
@@ -83,6 +83,9 @@ export function Home(){
             <div className='contact__separator'></div>
           </div>
 
+          <div className='contact '>
+            
+          </div>
     </>
   )
 }
