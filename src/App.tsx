@@ -7,6 +7,7 @@ import { StatusBar } from './components/Molecules/StatusBar/StatusBar';
 import { Contact } from './components/Pages/Contact/Contact';
 import { Footer } from './components/Organisms/Footer/Footer';
 import { Home } from './components/Pages/Home/Home';
+import { Idla } from './components/Pages/Idla/Idla';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: 'contact', // Chemin relatif
         element: <Contact />
+      },
+      {
+        path: 'idla',
+        element: <Idla />
       }
     ]
   }

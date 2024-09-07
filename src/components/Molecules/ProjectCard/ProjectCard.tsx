@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 interface ProjectCardProps{
   icon: string,
   iconAlt: string,
@@ -7,12 +9,13 @@ interface ProjectCardProps{
   title2: string,
   subtitle1: string,
   subtitle2: string,
-  color: string
+  color: string,
+  link: string
 }
 
-export function ProjectCard({icon, iconAlt, img, imgAlt, title1, title2, subtitle1, subtitle2, color}: ProjectCardProps){
+export function ProjectCard({icon, iconAlt, img, imgAlt, title1, title2, subtitle1, subtitle2, color, link}: ProjectCardProps){
   return(
-    <div className='projet__item'>
+    <Link to={link} className='projet__item'>
       <div className='flex'>
         <div className='projet__item__icon'>
           <img src={icon} alt={iconAlt} />
@@ -23,6 +26,6 @@ export function ProjectCard({icon, iconAlt, img, imgAlt, title1, title2, subtitl
       </div>
       <div className='projet__item__title idla' style={{color:color}}> {title1} <br /> {title2} </div>
       <div className='projet__item__description'><span className='projet__item__description idla'  style={{color:color}}>{subtitle1}</span> {subtitle2}</div>
-    </div>
+    </Link >
   )
 }
