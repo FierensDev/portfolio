@@ -128,6 +128,23 @@ p{
   color: var(--color-subtitle2);
 }
 
+.color-idla {
+  color: var(--color-IDLA);
+}
+
+.color-idla-gradient {
+  width: fit-content;
+  color:transparent;
+  background: linear-gradient(145deg, var(--color-IDLA) 0%, #2d2d2d 100%);
+  background-clip: text;
+  --webkit-background-clip: text;
+}
+
+.bg-idla-gradient{
+  background: linear-gradient(145deg, var(--color-IDLA) 0%, #2d2d2d 100%);
+}
+
+
 a {
   color: var(--color-subtitle);
   text-decoration: none; /* no underline */
@@ -145,6 +162,13 @@ a {
   color: transparent;
 }
 
+.m-auto{
+  margin: auto;
+}
+
+.text-center{
+  text-align: center;
+}
 
 .hide-phone {
   display: none;
