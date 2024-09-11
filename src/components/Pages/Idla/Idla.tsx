@@ -8,6 +8,15 @@ import IconNext from '../../../assets/next.svg'
 import IconPostgresql from '../../../assets/postgresql.svg'
 import IconTailwind from '../../../assets/tailwind.svg'
 
+import IphoneBezel from '../../../assets/Iphone.svg'
+import IpadBezel from '../../../assets/ipad.svg'
+// import PhoneContent from '../../../assets/phone_content.svg'
+import PhoneContent from '../../../assets/Group 8606.svg'
+import Desktop from '../../../assets/montageidla.png'
+import NextAuth from '../../../assets/nextauth.jpg'
+import MapGif from '../../../assets/mapgif.gif'
+import BeforeAfterGif from '../../../assets/beforeaftergif.gif'
+import AlertIdla from '../../../assets/alertidla.png'
 
 export function Idla(){
   return(
@@ -50,32 +59,80 @@ export function Idla(){
         </div>
       </div>
 
-      <div>
-        <h3 className='text-20'>Solution</h3>
-        <p  className='text-20 text-gradient'>Créer un site qui regroupera l’ensemble des biens disponible en permetant aux  clients de pouvoir faire une simulation de financement sur chaque bien</p>
+      <div className='idla__soluce'>
+        <div>
+          <h3 className='text-20'>Solution</h3>
+          <p  className='text-20 text-gradient'>Créer un site qui regroupera l’ensemble des biens disponible en permetant aux  clients de pouvoir faire une simulation de financement sur chaque bien</p>
+        </div>
+
+        <div className='grid-gap-24'>
+          <div className="separator-idla adapt-to-container">
+            <div className="separator__title-idla">année</div>
+            <div className="separator__line-idla"></div>
+          </div>
+          <p className='color-idla'>2023 . 2024</p>
+          <div className="separator-idla adapt-to-container">
+            <div className="separator__title-idla">durée</div>
+            <div className="separator__line-idla"></div>
+          </div>
+          <p className='color-idla'>1 an</p>
+
+          <div className="separator-idla adapt-to-container">
+            <div className="separator__title-idla">outils</div>
+            <div className="separator__line-idla"></div>
+          </div>
+          <div className='idla__icon-container'>
+            <img src={IconPrisma} alt="prisma logo" />
+            <img src={IconNext} alt="next icon" />
+            <img src={IconPostgresql} alt="postgresql icon" />
+            <img src={IconTailwind} alt="tailwind" />
+          </div>
+        </div>
       </div>
 
-      <div className='grid-gap-24'>
-        <div className="separator-idla adapt-to-container">
-          <div className="separator__title-idla">année</div>
-          <div className="separator__line-idla"></div>
-        </div>
-        <p className='color-idla'>2023 . 2024</p>
-        <div className="separator-idla adapt-to-container">
-          <div className="separator__title-idla">durée</div>
-          <div className="separator__line-idla"></div>
-        </div>
-        <p className='color-idla'>1 an</p>
+      <Separator title='maquette' id='maquette'/>
 
-        <div className="separator-idla adapt-to-container">
-          <div className="separator__title-idla">outils</div>
-          <div className="separator__line-idla"></div>
+      <div className='idla-mockup'>
+        <h3 className='text-sm text-gradient m-auto'>création d’un parcours client et d’un design responsive</h3>
+
+        <div className='idla-mockup-grid'>
+          <div className='idla-mockup-grid__phone'>
+            <img className='iphone' src={IphoneBezel} alt="iphone" />
+            
+            <img className='ipad' src={IpadBezel} alt="iphone" />
+            <div className='desktop'  >
+              <img src={Desktop} alt="" />
+            </div>
+            {/* <img className='iphone_content' src={PhoneContent} alt="" /> */}
+          </div>
+          {/* <div className='idla-mockup-grid__tablet'></div> */}
+          {/* <div className='idla-mockup-grid__desktop'></div> */}
         </div>
-        <div className='idla__icon-container'>
-          <img src={IconPrisma} alt="prisma logo" />
-          <img src={IconNext} alt="next icon" />
-          <img src={IconPostgresql} alt="postgresql icon" />
-          <img src={IconTailwind} alt="tailwind" />
+      </div>
+
+
+      <div className='idla__security'>
+      <Separator title='sécurité' id='security'/>
+        <img src={NextAuth} alt="next auth icon" />
+        <p className='text-gradient text-center m-auto'>Authentification avec
+          NextAuth, incluant 
+          la double
+          authentification par
+          email et SMS, ainsi que 
+          la sécurisation des pages 
+          et des fonctionnalités
+          sensibles
+        </p>
+      </div>
+
+      <Separator title='autre' id='other'/>
+      <div className='idla__other'>
+        <p className='text-gradient text-center m-auto'>Ajout d’elements intéractifs tel qu’une carte intéractive, d’animations, de filtres, scroll infini intégration d’api externe, affichage des erreurs, achat d’un nom de domaine et déploiement via Vercel </p>
+
+        <div className='idla__other__grid'>
+          <img src={MapGif} alt="" />
+          <img src={BeforeAfterGif} alt="" />
+          <img src={AlertIdla} alt="" />
         </div>
       </div>
     </div>

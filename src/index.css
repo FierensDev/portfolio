@@ -116,6 +116,13 @@ p{
   margin: 0;
 }
 
+.text-sm {
+  font-family:'SF Pro Display';
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  margin: 0;
+}
+
 .text-color-text {
   color: var(--color-text);
 }
