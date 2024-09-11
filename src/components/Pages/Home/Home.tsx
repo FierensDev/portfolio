@@ -39,7 +39,7 @@ export function Home(){
               <div className='square'></div>
             </div> */}
           </div>
-          
+          <h6 className="deuns">SALUUUUUUUT TEST</h6>
           <div className='presentation__project'>
             <Separator title='projets' id={"section_project"}/>
 
