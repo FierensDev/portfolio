@@ -5,8 +5,8 @@
   --color-subtitle2: #404040;
   --color-IDLA: #C49E69;
 
-  --font-family-sfprodisplay: 'SF Pro Display', sans-serif;
-  --font-family-monumentextended: 'Monument Extended', sans-serif;
+  --font-family-sfprodisplay: 'SF Pro Display', 'Roboto', sans-serif;
+  --font-family-monumentextended: 'Monument Extended', 'Roboto', sans-serif;
 
   --font-weight-normal: 400;
   --font-weight-bold: 700;
