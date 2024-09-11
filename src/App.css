@@ -85,7 +85,7 @@
 }
 
 .projet__item__title{
-  font-family: 'Monument';
+  font-family: var(--font-family-monumentextended);
   font-size: 27px;
   padding: 16px 0;
 }
