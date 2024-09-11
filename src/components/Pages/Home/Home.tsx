@@ -1,6 +1,6 @@
 import { Separator } from "../../Atoms/Separator/Separator";
 import { ProjectCard } from "../../Molecules/ProjectCard/ProjectCard";
-
+import { useLocation } from 'react-router-dom';
 
 import IdlaIconPhoneSize from '../../../assets/idlaPhoneSize.svg'
 import EpitechPhoneSize from '../../../assets/epitech-eu.svg'
@@ -8,8 +8,24 @@ import IdlaBackground from '../../../assets/idlamontageH.jpg'
 import ProfilePicture from '../../../assets/tower101.png'
 
 import ArrowSvg from '../../../assets/arrow.svg'
+import { useEffect } from "react";
 
 export function Home(){
+
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log(location);
+
+    const hash = location.hash;
+    if(hash){
+      const element = document.getElementById(hash.replace("#", ""));
+      if (element){
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location])
+
   return(
     <>
           <div className='presentation'>
@@ -83,7 +99,6 @@ export function Home(){
           </div>
 
           <div className='contact '>
-            
           </div>
     </>
   )
