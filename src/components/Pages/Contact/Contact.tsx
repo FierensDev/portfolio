@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 
 export function Contact(){
+
   function handleForm(e: React.FormEvent<HTMLFormElement>){
     e.preventDefault()
     const formData = new FormData(e.currentTarget);
@@ -30,6 +31,7 @@ export function Contact(){
       .then(
         (r) => {
           console.log('email sent!', r.text);
+          window.alert('Email sent !')
         },
         (error) => {
           console.log('FAILED...', error.text);
