@@ -243,6 +243,12 @@ a {
   margin: 80px 0;
 }
 
+.weather{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @keyframes move-text-to-top{
   0%{
     transform: translateY(0px);

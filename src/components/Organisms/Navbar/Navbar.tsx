@@ -13,10 +13,7 @@ export function Navbar(){
   return(
 <nav className={displayNavbar ? `navbar anime-extend-menu` : `navbar anime-extend-menu-reverse` }>
   <div className="navbar__main">
-    
- 
-    
-    <Link to="/portfolio">
+    <Link to={'/portfolio#t'} >
       <h1>Denis Fierens</h1>
     </Link>
 

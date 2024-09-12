@@ -1,5 +1,7 @@
 import './StatusBar.css'
 import { DotPulse } from '../../Atoms/DotPulse/DotPulse'
+import { CurrentTime } from '../../Atoms/CurrentTime/CurrentTime'
+import { Weather } from '../../Atoms/Weather/Weather'
 
 export function StatusBar(){
   return(
@@ -8,8 +10,8 @@ export function StatusBar(){
     <div></div>
     <DotPulse />
     <span className='color-subtitle2 font-semibold'>Paris</span>
-    <span className='color-subtitle2 font-semibold'>12:34:57</span>
-    <span className='color-subtitle2 font-semibold'>20°</span>
+    <CurrentTime />
+    <Weather />
   </div>
   )
 }

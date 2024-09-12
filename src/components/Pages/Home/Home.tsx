@@ -1,6 +1,6 @@
 import { Separator } from "../../Atoms/Separator/Separator";
 import { ProjectCard } from "../../Molecules/ProjectCard/ProjectCard";
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import IdlaIconPhoneSize from '../../../assets/idlaPhoneSize.svg'
 import EpitechPhoneSize from '../../../assets/epitech-eu.svg'
@@ -28,7 +28,7 @@ export function Home(){
 
   return(
     <>
-          <div className='presentation'>
+          <div className='presentation' id="t">
             <div className='adapt-to-container'>
               <h2 className='text-gradient text-h2'>Je suis Denis,<br></br>un développeur web</h2>
               <div className='text-animation'>
@@ -69,7 +69,7 @@ export function Home(){
               <div className='about'>
                 <div className='about__container'>
                   <Separator title='a propos' id={"section_about"}/>
-                  <h3 className='text-gradient text-lg'>Je suis Denis, un jeune français de 25 ans, passionné par le développement web, le sport et l'exploration du monde </h3>
+                  <h3 className='text-gradient text-lg text-center'>Je suis Denis, un jeune français de 25 ans, passionné par le développement web, le sport et l'exploration du monde </h3>
                   <a href="/assets/Fierens_Cv_Dev.pdf" download="Fierens_CV_DEV" className='button hide-phone'>
                   <div className='button__content'>Télécharger mon CV</div>
                   <div className='button__background-to-top'></div>
@@ -89,12 +89,12 @@ export function Home(){
           </div>
          
           <div className="adapt-to-container contact_1">
-            <a href="#" className='contact__button text-h3 color-white' id="section_contact">
+            <Link to="/portfolio/contact" className='contact__button text-h3 color-white' id="section_contact">
               <span className='text-h3 color-white'>Contactez moi</span>
               <div className='arrow rotate-45'>
                 <img src={ArrowSvg} alt="arrow" />
               </div>
-            </a>
+            </Link>
             <div className='contact__separator'></div>
           </div>
 
