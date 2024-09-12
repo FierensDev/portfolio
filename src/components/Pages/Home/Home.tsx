@@ -70,7 +70,7 @@ export function Home(){
                 <div className='about__container'>
                   <Separator title='a propos' id={"section_about"}/>
                   <h3 className='text-gradient text-lg text-center'>Je suis Denis, un jeune français de 25 ans, passionné par le développement web, le sport et l'exploration du monde </h3>
-                  <a href="/assets/Fierens_Cv_Dev.pdf" download="Fierens_CV_DEV" className='button hide-phone'>
+                  <a href="/portfolio/assets/Fierens_Cv_Dev.pdf" download="Fierens_CV_DEV" className='button hide-phone'>
                   <div className='button__content'>Télécharger mon CV</div>
                   <div className='button__background-to-top'></div>
                 </a>
@@ -80,7 +80,7 @@ export function Home(){
                   <img className='about__picture__img' src={ProfilePicture} alt="photo de moi avec avec la tour 101" />
                 </div>
 
-                <a href="../../../assets/Fierens_Cv_Dev.pdf" download="Fierens_CV_DEV" className='button hide-tablet'>
+                <a href="/portfolio/assets/Fierens_Cv_Dev.pdf" download="Fierens_CV_DEV" className='button hide-tablet'>
                   <div className='button__content'>Télécharger mon CV</div>
                   <div className='button__background-to-top'></div>
                 </a>
