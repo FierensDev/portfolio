@@ -80,7 +80,7 @@ export function Home(){
                   <img className='about__picture__img' src={ProfilePicture} alt="photo de moi avec avec la tour 101" />
                 </div>
 
-                <a href="../../../assets/Fierens_Cv_Dev.pdf" download="Fierens_CV_DEV" className='button hide-tablet'>
+                <a href="/assets/Fierens_Cv_Dev.pdf" download="Fierens_CV_DEV" className='button hide-tablet'>
                   <div className='button__content'>Télécharger mon CV</div>
                   <div className='button__background-to-top'></div>
                 </a>
