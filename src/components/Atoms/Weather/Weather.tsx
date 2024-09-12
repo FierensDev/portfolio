@@ -18,25 +18,25 @@ export function Weather(){
     weather: [{ icon: "https://openweathermap.org/img/wn/weatherData.weather[0]?.icon.png" }]
   });
 
-  // useEffect(() => {
-  //   fetch(`https://api.openweathermap.org/data/2.5/weather?lat=48.866667&lon=2.333333&units=metric&appid=${process.env.REACT_APP_OPEN_WEATHER_API_KEY}`,
-  //     {
-  //       method:"GET"
-  //     }
-  //   )
-  //   .then((res) => {
-  //     if(res.status === 200){
-  //       return res.json()
-  //     }
-  //     throw new Error('check api key')
-  //   })
-  //   .then((data) => {
-  //     setWeatherData(data);
-  //   })
-  //   .catch((err) => {
-  //     console.log(err);
-  //   })
-  // }, [])
+  useEffect(() => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=48.866667&lon=2.333333&units=metric&appid=${process.env.REACT_APP_OPEN_WEATHER_API_KEY}`,
+      {
+        method:"GET"
+      }
+    )
+    .then((res) => {
+      if(res.status === 200){
+        return res.json()
+      }
+      throw new Error('check api key')
+    })
+    .then((data) => {
+      setWeatherData(data);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+  }, [])
 
   return (
     <div className="weather">

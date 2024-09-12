@@ -43,7 +43,7 @@ export function Idla(){
 
       <div className='idla__recap'>
         <div>
-          <div className='idla__recap__title-clients text-16-20'>Besoins des clients</div>
+          <div className='idla__recap__title-clients '>Besoins des clients</div>
           <div className='text-gradient lh-15'>
             <p>-Pouvoir consulter les biens disponible</p>
             <p>-Effectuer des simulations de financements</p>
@@ -51,7 +51,7 @@ export function Idla(){
         </div>
         
         <div>
-          <div className='idla__recap__title-clients text-16-20'>besoins de l’entreprise</div>
+          <div className='idla__recap__title-clients '>besoins de l’entreprise</div>
           <div className='text-gradient idla__recap__subtitle lh-15'>
             <p>-Faire signer des mandats de recherche</p>
             <p>-Recevoir moin d’appels telephonique concernants les recherches de biens et les simulations de financements</p>

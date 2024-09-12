@@ -71,9 +71,9 @@ export function Home(){
                   <Separator title='a propos' id={"section_about"}/>
                   <h3 className='text-gradient text-lg text-center'>Je suis Denis, un jeune français de 25 ans, passionné par le développement web, le sport et l'exploration du monde </h3>
                   <a href="/portfolio/assets/Fierens_Cv_Dev.pdf" download="Fierens_CV_DEV" className='button hide-phone'>
-                  <div className='button__content'>Télécharger mon CV</div>
-                  <div className='button__background-to-top'></div>
-                </a>
+                    <div className='button__content'>Télécharger mon CV</div>
+                    <div className='button__background-to-top'></div>
+                  </a>
                 </div>
 
                 <div className='about__picture'>

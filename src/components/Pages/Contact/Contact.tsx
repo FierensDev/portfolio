@@ -1,5 +1,7 @@
 import './Contact.css'
 import MailSvg from '../../../assets/mail.svg'
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 export function Contact(){
   function handleForm(e: React.FormEvent<HTMLFormElement>){
@@ -17,6 +19,24 @@ export function Contact(){
     // target.style.height = `${scrollHeight}px`;
   };
 
+  const form: any = useRef();
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_9zbkohp', 'template_wea51pg', form.current, {
+        publicKey: process.env.REACT_APP_EMAILJS_API_KEY,
+      })
+      .then(
+        (r) => {
+          console.log('email sent!', r.text);
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return(
     <div className="adapt-to-container">
       <div className="contact">
@@ -28,9 +48,9 @@ export function Contact(){
       </div>
 
       <div className='container__social-media'>
-        <form onSubmit={handleForm} className='contact__form'>
-          <input type="text" name='name' id='name' placeholder='Nom' className='contact__form-input'/>
-          <input type="email" name='email' id='email' required placeholder='Email' className='contact__form-input' />
+        <form ref={form} onSubmit={sendEmail} className='contact__form'>
+          <input type="text" name='user_name' id='name' placeholder='Nom' className='contact__form-input'/>
+          <input type="email" name='user_email' id='email' required placeholder='Email' className='contact__form-input' />
           <textarea 
             className="contact__form-textarea"
             name="message" id="message" placeholder="Message" onKeyUp={handleTextAreaHeight}
