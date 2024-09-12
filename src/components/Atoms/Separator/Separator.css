@@ -13,7 +13,7 @@
 }
 
 .separator__line{
-  background: var(--color-subtitle);
+  background: var(--color-subtitle-50);
   width: 100%;
   height: 1px;
 }

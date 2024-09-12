@@ -54,8 +54,8 @@ export function Contact(){
               <div className='button__background-to-top'></div>
             </div>
             <div className='social-media__text'>
-              <p className='color-white'>Mail</p>
-              <p className='color-white'>denis.fierens@epitech.eu</p>
+              <p className='color-white text-20'>Mail</p>
+              <p className='color-gradient onhover-color-white'>denis.fierens@epitech.eu</p>
             </div>
           </a>
 
@@ -69,8 +69,8 @@ export function Contact(){
               <div className='button__background-to-top'></div>
             </div>
             <div className='social-media__text'>
-              <p className='color-white'>Linkedin</p>
-              <p className='color-white'>@d.fierens_</p>
+              <p className='color-white text-20'>Linkedin</p>
+              <p className='color-gradient onhover-color-white'>fierensdenis</p>
             </div>
           </a>
 
@@ -84,8 +84,8 @@ export function Contact(){
               <div className='button__background-to-top'></div>
             </div>
             <div className='social-media__text'>
-              <p className='color-white'>Instagram</p>
-              <p className='color-white'>@d.fierens_</p>
+              <p className='color-white text-20'>Instagram</p>
+              <p className='color-gradient onhover-color-white'>@d.fierens_</p>
             </div>
           </a>
         </div>

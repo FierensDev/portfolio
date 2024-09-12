@@ -23,7 +23,7 @@ export function Idla(){
     <div className='adapt-to-container'>
       <h2 className="color-idla-gradient text-h2 m-auto text-center">INVESTIR DANS L'ANCIEN</h2>
       <div className='idla__introduction'>
-        <p className="text-center m-auto text-h3 text-gradient">
+        <p className="text-center m-auto text-h3 text-gradient lh-15">
           L'entreprise est spécialisée dans l'investissement locatif
           <br /><br />
           Elle accompagne ses clients dans la recherche de bien immobilier, son achat, sa rénovation, sa gestion, ainsi que la recherche de locataires.
@@ -36,52 +36,52 @@ export function Idla(){
         </div>
       </div>
 
-      <div>
-        <h3 className='text-20'>Challenge</h3>
-        <p  className='text-20 text-gradient'>Pouvoir créer une application qui repond aux besoins de ses clients et de l’entreprise</p>
+      <div className='mt-80 grid-gap-16'>
+        <h3 className='text-20 color-idla'>Challenge</h3>
+        <p  className='text-20 text-gradient lh-15 font-weight-700'>Pouvoir créer une application qui repond aux besoins de ses clients et de l’entreprise</p>
       </div>
 
       <div className='idla__recap'>
         <div>
-          <div className='idla__recap__title-clients'>Besoins des clients</div>
-          <div className='text-gradient'>
+          <div className='idla__recap__title-clients text-16-20'>Besoins des clients</div>
+          <div className='text-gradient lh-15'>
             <p>-Pouvoir consulter les biens disponible</p>
             <p>-Effectuer des simulations de financements</p>
           </div>
         </div>
         
         <div>
-          <div className='idla__recap__title-clients'>besoins de l’entreprise</div>
-          <div className='text-gradient idla__recap__subtitle'>
+          <div className='idla__recap__title-clients text-16-20'>besoins de l’entreprise</div>
+          <div className='text-gradient idla__recap__subtitle lh-15'>
             <p>-Faire signer des mandats de recherche</p>
             <p>-Recevoir moin d’appels telephonique concernants les recherches de biens et les simulations de financements</p>
           </div>
         </div>
       </div>
 
-      <div className='idla__soluce'>
-        <div>
-          <h3 className='text-20'>Solution</h3>
-          <p  className='text-20 text-gradient'>Créer un site qui regroupera l’ensemble des biens disponible en permetant aux  clients de pouvoir faire une simulation de financement sur chaque bien</p>
+      <div className='idla__soluce '>
+        <div className='mt-80 grid-gap-16 '>
+          <h3 className='text-20 color-idla'>Solution</h3>
+          <p  className='text-16-20 text-gradient lh-15'>Créer un site qui regroupera l’ensemble des biens disponible en permetant aux  clients de pouvoir faire une simulation de financement sur chaque bien</p>
         </div>
 
-        <div className='grid-gap-24'>
+        <div className='grid-gap-8 mb-40'>
           <div className="separator-idla adapt-to-container">
             <div className="separator__title-idla">année</div>
             <div className="separator__line-idla"></div>
           </div>
-          <p className='color-idla'>2023 . 2024</p>
+          <p className='color-idla text-20'>2023 . 2024</p>
           <div className="separator-idla adapt-to-container">
             <div className="separator__title-idla">durée</div>
             <div className="separator__line-idla"></div>
           </div>
-          <p className='color-idla'>1 an</p>
+          <p className='color-idla text-20'>1 an</p>
 
           <div className="separator-idla adapt-to-container">
             <div className="separator__title-idla">outils</div>
             <div className="separator__line-idla"></div>
           </div>
-          <div className='idla__icon-container'>
+          <div className='idla__icon-container '>
             <img src={IconPrisma} alt="prisma logo" />
             <img src={IconNext} alt="next icon" />
             <img src={IconPostgresql} alt="postgresql icon" />
@@ -93,9 +93,9 @@ export function Idla(){
       <Separator title='maquette' id='maquette'/>
 
       <div className='idla-mockup'>
-        <h3 className='text-sm text-gradient m-auto'>création d’un parcours client et d’un design responsive</h3>
+        <h3 className='text-20 text-center text-gradient m-auto font-weight-700 lh-15 my-40'>création d’un parcours client et d’un design responsive</h3>
 
-        <div className='idla-mockup-grid'>
+        <div className='idla-mockup-grid mb-80'>
           <div className='idla-mockup-grid__phone'>
             <img className='iphone' src={IphoneBezel} alt="iphone" />
             
@@ -112,9 +112,9 @@ export function Idla(){
 
 
       <div className='idla__security'>
-      <Separator title='sécurité' id='security'/>
+        <Separator title='sécurité' id='security'/>
         <img src={NextAuth} alt="next auth icon" />
-        <p className='text-gradient text-center m-auto'>Authentification avec
+        <p className='text-gradient text-center text-16-20 m-auto font-weight-700 lh-15'>Authentification avec
           NextAuth, incluant 
           la double
           authentification par
@@ -127,7 +127,7 @@ export function Idla(){
 
       <Separator title='autre' id='other'/>
       <div className='idla__other'>
-        <p className='text-gradient text-center m-auto'>Ajout d’elements intéractifs tel qu’une carte intéractive, d’animations, de filtres, scroll infini intégration d’api externe, affichage des erreurs, achat d’un nom de domaine et déploiement via Vercel </p>
+        <p className='text-gradient text-center m-auto text-20 font-weight-700 lh-15'>Ajout d’elements intéractifs tel qu’une carte intéractive, d’animations, de filtres, scroll infini intégration d’api externe, affichage des erreurs, achat d’un nom de domaine et déploiement via Vercel </p>
 
         <div className='idla__other__grid'>
           <img src={MapGif} alt="" />
