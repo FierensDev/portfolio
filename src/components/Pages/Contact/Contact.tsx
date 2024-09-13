@@ -5,7 +5,7 @@ import { useRef, useState } from 'react';
 
 export function Contact(){
 
-  const [submitState, setSubmitState] = useState(400)
+  const [submitState, setSubmitState] = useState(0)
 
   function handleForm(e: React.FormEvent<HTMLFormElement>){
     e.preventDefault()
@@ -48,20 +48,23 @@ export function Contact(){
   return(
     <div className="adapt-to-container">
       <div className="contact">
-        <h2 className="text-h2 text-gradient">Contactez moi</h2>
+        <h2 className="text-h2 text-gradient contact__title">Contactez moi</h2>
 
-        <p className="text-gradient text-h3">N'hésitez pas à me contacter à tout moment,
+        <p className="text-gradient text-h3 contact__subtitle">N'hésitez pas à me contacter à tout moment,
           je vous répondrai dès que possible
         </p>
       </div>
 
-      <div className='container__social-media'>
+      <div className='container__social-media mt-80'>
         <form ref={form} onSubmit={sendEmail} className='contact__form'>
-          <input type="text" name='user_name' id='name' placeholder='Nom' className='contact__form-input'/>
-          <input type="email" name='user_email' id='email' required placeholder='Email' className='contact__form-input' />
+          <input type="text" name='user_name' id='name' placeholder='Nom' className='contact__form-input' disabled={submitState > 0}/>
+          <input type="email" name='user_email' id='email' required placeholder='Email' className='contact__form-input' disabled={submitState > 0}/>
           <textarea 
             className="contact__form-textarea"
-            name="message" id="message" placeholder="Message" onKeyUp={handleTextAreaHeight}
+            name="message" id="message" 
+            placeholder="Message" 
+            onKeyUp={handleTextAreaHeight}
+            disabled={submitState > 0}
           ></textarea>
 
           <button className={submitState === 0 ? 'button' : submitState === 102 ? 'button button-wait' : submitState === 200 ? 'button button-sent' : submitState === 400 ? 'button button-error' : 'button button-error'} disabled={submitState > 0}>
@@ -69,7 +72,7 @@ export function Contact(){
               <div className='button__content'>Envoyer</div>
             :
             submitState === 102 ? 
-              <div className='text-color-text'>Envoie en cours</div>
+              <div className='text-color-text'>Envoie en cours...</div>
             :
             submitState === 200 ? 
              <div className='text-color-text'>Message envoyé !</div>

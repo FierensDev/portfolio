@@ -43,16 +43,16 @@ export function Idla(){
 
       <div className='idla__recap'>
         <div>
-          <div className='idla__recap__title-clients '>Besoins des clients</div>
-          <div className='text-gradient lh-15'>
+          <div className='idla__recap__title-clients text-20'>Besoins des clients</div>
+          <div className='text-gradient lh-15 text-20'>
             <p>-Pouvoir consulter les biens disponible</p>
             <p>-Effectuer des simulations de financements</p>
           </div>
         </div>
         
         <div>
-          <div className='idla__recap__title-clients '>besoins de l’entreprise</div>
-          <div className='text-gradient idla__recap__subtitle lh-15'>
+          <div className='idla__recap__title-clients text-20'>besoins de l’entreprise</div>
+          <div className='text-gradient idla__recap__subtitle lh-15 text-20'>
             <p>-Faire signer des mandats de recherche</p>
             <p>-Recevoir moin d’appels telephonique concernants les recherches de biens et les simulations de financements</p>
           </div>
@@ -113,7 +113,8 @@ export function Idla(){
 
       <div className='idla__security'>
         <Separator title='sécurité' id='security'/>
-        <img src={NextAuth} alt="next auth icon" />
+        <div className='span-2 mt-60'></div>
+        <img src={NextAuth} alt="next auth icon"  />
         <p className='text-gradient text-center text-16-20 m-auto font-weight-700 lh-15'>Authentification avec
           NextAuth, incluant 
           la double
