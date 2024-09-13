@@ -21,6 +21,7 @@
   --color-subtitle2: #404040;
   --color-IDLA: #C49E69;
   --color-IDLA-50: #c49e695e;
+  --color-error: red;
 
   --font-family-sfprodisplay: 'MySF Pro Display', sans-serif;
   --font-family-monumentextended: 'MyMonument Extended', sans-serif;
@@ -151,6 +152,10 @@ p{
 
 .text-color-text {
   color: var(--color-text);
+}
+
+.text-color-error{
+  color: var(--color-error);
 }
 
 .color-white{

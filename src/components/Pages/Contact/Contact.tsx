@@ -1,9 +1,11 @@
 import './Contact.css'
 import MailSvg from '../../../assets/mail.svg'
 import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 export function Contact(){
+
+  const [submitState, setSubmitState] = useState(400)
 
   function handleForm(e: React.FormEvent<HTMLFormElement>){
     e.preventDefault()
@@ -23,6 +25,7 @@ export function Contact(){
   const form: any = useRef();
   const sendEmail = (e: any) => {
     e.preventDefault();
+    setSubmitState(102);
 
     emailjs
       .sendForm('service_9zbkohp', 'template_wea51pg', form.current, {
@@ -30,11 +33,14 @@ export function Contact(){
       })
       .then(
         (r) => {
-          console.log('email sent!', r.text);
-          window.alert('Email sent !')
+          console.log('email sent!', r);
+          if(r.status === 200){
+            setSubmitState(200);
+          } 
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          setSubmitState(400)
+          console.log('FAILED...', error);
         },
       );
   };
@@ -58,9 +64,27 @@ export function Contact(){
             name="message" id="message" placeholder="Message" onKeyUp={handleTextAreaHeight}
           ></textarea>
 
-          <button className='button'>
-            <div className='button__content'>Envoyer</div>
-            <div className='button__background-to-top'></div>
+          <button className={submitState === 0 ? 'button' : submitState === 102 ? 'button button-wait' : submitState === 200 ? 'button button-sent' : submitState === 400 ? 'button button-error' : 'button button-error'} disabled={submitState > 0}>
+            {submitState === 0 ? 
+              <div className='button__content'>Envoyer</div>
+            :
+            submitState === 102 ? 
+              <div className='text-color-text'>Envoie en cours</div>
+            :
+            submitState === 200 ? 
+             <div className='text-color-text'>Message envoyé !</div>
+            :
+            submitState === 400 ? 
+            <div className='text-color-error'>Erreur veuillez réessayer plus tard...</div>
+           :
+              <></>
+            }
+           
+            {submitState > 0 ? 
+             <></>
+             :
+             <div className='button__background-to-top'></div>
+            }
           </button>
         </form>
 
