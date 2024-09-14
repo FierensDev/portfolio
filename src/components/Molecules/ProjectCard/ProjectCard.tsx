@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { Separator } from "../../Atoms/Separator/Separator"
 
 interface ProjectCardProps{
   icon: string,
@@ -26,6 +27,24 @@ export function ProjectCard({icon, iconAlt, img, imgAlt, title1, title2, subtitl
       </div>
       <div className='projet__item__title idla' style={{color:color}}> {title1} <br /> {title2} </div>
       <div className='projet__item__description'><span className='projet__item__description idla'  style={{color:color}}>{subtitle1}</span> {subtitle2}</div>
+
+      {true ? 
+        <div className="epitech">
+          <div>
+            <div className="separator-idla adapt-to-container">
+              <div className="separator__title-idla">année</div>
+              <div className="separator__line-idla"></div>
+            </div>
+            <p className='color-idla text-20'>2022 . 2024</p>
+          </div>
+          <div>
+            php, javascript, Typescript, java, python, GO, html, css, SQL
+            React, Vu, Angular, Next, Node, Symfony, Laravel, Ruby, Springboot, react native
+          </div>
+        </div>
+      :
+        <></>
+      }
     </Link >
   )
 }

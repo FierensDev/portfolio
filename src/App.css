@@ -40,6 +40,8 @@
 
 
 .projet__item{
+  position: relative;
+
   height: auto;
   width: 100%;
   background: #181818;
@@ -233,6 +235,21 @@
 .testgrid > div{
 border: 2px solid white;
 }
+.epitech{
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  /* border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0); */
+
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  gap: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+}
 @media (min-width: 768px){
   .container {
     padding: 0 22px;
@@ -249,6 +266,8 @@ border: 2px solid white;
     align-items: center;
   }
 }
+
+
 
 @media (min-width: 1024px){
   .text-animation {

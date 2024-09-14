@@ -60,6 +60,7 @@ export function Home(){
 
             <div className='grid_projet_items adapt-to-container'>
               <ProjectCard icon={IdlaIconPhoneSize} iconAlt="Investir dans l'ancien" img={IdlaBackground} imgAlt="Montage investir dans l'ancien" title1="Investir dans" title2="l'ancien" subtitle1="Site web" subtitle2="pour une société faisant de l'investissement locatif" color='#C49E69' link="idla"/>
+
               <ProjectCard icon={EpitechPhoneSize}  iconAlt="Investir dans l'ancien" img={IdlaBackground} imgAlt="Montage investir dans l'ancien" title1="Epitech" title2="" subtitle1="Ecole" subtitle2="de l'excellence informatique. Pour devenir expert en ingénierie informatique" color='#0091D3' link="/portfolio"/>
             </div>
           </div>
