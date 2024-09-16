@@ -23,6 +23,8 @@
   --color-IDLA-50: #c49e695e;
   --color-EPITECH: #0091D3;
   --color-EPITECH-50: #0091D35e;
+  --color-ESGI: #00eaff;
+  --color-ESGI-50: #00eaff5e;
   --color-error: red;
 
   --font-family-sfprodisplay: 'MySF Pro Display', sans-serif;
@@ -431,4 +433,3 @@ a {
     }
   }
 }
-

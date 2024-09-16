@@ -30,7 +30,7 @@
 .projet__item__photo__img{
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit:fill;
 }
 
 
@@ -50,6 +50,7 @@
 .projet__item:hover .epitech{
   opacity: 1;
 }
+
 
 .epitech{
   position: absolute;
@@ -86,4 +87,47 @@
   font-size: var(--font-size-lg);
   width: 100%;
   height: 1px;
+}
+
+
+
+
+.esgi{
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+
+  display: grid;
+  grid-template-rows: 50px;
+  gap: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+
+  opacity: 0;
+  transition: opacity 0.4s ease
+}
+
+.separator-esgi{
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  gap: 8px;
+}
+
+.separator__title-esgi{
+  width: fit-content; 
+  color: var(--color-ESGI);
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+}
+
+.separator__line-esgi{
+  background: var(--color-ESGI-50);
+  font-size: var(--font-size-lg);
+  width: 100%;
+  height: 1px;
+}
+.projet__item:hover .esgi{
+  opacity: 1;
 }

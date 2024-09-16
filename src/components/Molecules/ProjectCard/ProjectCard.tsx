@@ -51,13 +51,13 @@ export function ProjectCard({icon, iconAlt, img, imgAlt, title1, title2, subtitl
       }
 
       {title1 === "ESGI" ? 
-        <div className="epitech">
+        <div className="esgi">
           <div>
-            <div className="separator-epitech adapt-to-container">
-              <div className="separator__title-epitech">année</div>
-              <div className="separator__line-epitech"></div>
+            <div className="separator-esgi adapt-to-container">
+              <div className="separator__title-esgi">année</div>
+              <div className="separator__line-esgi"></div>
             </div>
-            <p className='color-epitech text-20'>2022 . 2024</p>
+            <p className='color-esgi text-20'>2022 . 2024</p>
           </div>
           <div>
             php, javascript, Typescript, java, python, GO, html, css, SQL
