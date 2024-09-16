@@ -6,6 +6,8 @@ import IdlaIconPhoneSize from '../../../assets/idlaPhoneSize.svg'
 import EpitechPhoneSize from '../../../assets/epitech-eu.svg'
 import IdlaBackground from '../../../assets/idlamontageH.jpg'
 import ProfilePicture from '../../../assets/tower101.png'
+import EpitechExpertTech from '../../../assets/expertTech.jpg'
+import BgIdla from '../../../assets/bgIdla.jpg'
 
 import ArrowSvg from '../../../assets/arrow.svg'
 import { useEffect } from "react";
@@ -61,7 +63,8 @@ export function Home(){
             <div className='grid_projet_items adapt-to-container'>
               <ProjectCard icon={IdlaIconPhoneSize} iconAlt="Investir dans l'ancien" img={IdlaBackground} imgAlt="Montage investir dans l'ancien" title1="Investir dans" title2="l'ancien" subtitle1="Site web" subtitle2="pour une société faisant de l'investissement locatif" color='#C49E69' link="idla"/>
 
-              <ProjectCard icon={EpitechPhoneSize}  iconAlt="Investir dans l'ancien" img={IdlaBackground} imgAlt="Montage investir dans l'ancien" title1="Epitech" title2="" subtitle1="Ecole" subtitle2="de l'excellence informatique. Pour devenir expert en ingénierie informatique" color='#0091D3' link="/portfolio"/>
+              <ProjectCard icon={EpitechPhoneSize}  iconAlt="Epitech" img={EpitechExpertTech} imgAlt="Montage Epitech" title1="Epitech" title2="" subtitle1="Ecole" subtitle2="de l'excellence informatique. Pour devenir expert en ingénierie informatique" color='#0091D3' link="/portfolio"/>
+              <ProjectCard icon={EpitechPhoneSize}  iconAlt="ESGI" img={IdlaBackground} imgAlt="Montage ESGI" title1="ESGI" title2="" subtitle1="Ecole" subtitle2="de l'excellence informatique. Pour devenir expert en ingénierie informatique" color='#0091D3' link="/portfolio"/>
             </div>
           </div>
           

@@ -1,0 +1,89 @@
+.projet__item{
+  position: relative;
+
+  height: auto;
+  width: 100%;
+  background: #181818;
+
+  border-radius: 8px;
+
+  padding: 24px;
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.projet__item__icon{
+  width: 35px;
+  height: 35px;
+}
+
+.projet__item__photo{
+  width: 170px;
+  height: 110px;
+  border-radius: 8px;
+
+  transform: translate(0, -30px) rotate(-10deg);
+  overflow: hidden;
+}
+
+.projet__item__photo__img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+
+.projet__item__title{
+  font-family: var(--font-family-monumentextended);
+  font-size: 27px;
+  padding: 16px 0;
+}
+
+.projet__item__description{
+  font-family: 'SF Pro Display';
+  font-size: 20px;
+  color: var(--color-subtitle);
+}
+
+
+.projet__item:hover .epitech{
+  opacity: 1;
+}
+
+.epitech{
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+
+  display: grid;
+  grid-template-rows: 50px;
+  gap: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+
+  opacity: 0;
+  transition: opacity 0.4s ease
+}
+
+.separator-epitech{
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  gap: 8px;
+}
+
+.separator__title-epitech{
+  width: fit-content;
+  color: var(--color-EPITECH);
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+}
+
+.separator__line-epitech{
+  background: var(--color-EPITECH-50);
+  font-size: var(--font-size-lg);
+  width: 100%;
+  height: 1px;
+}

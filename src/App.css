@@ -38,22 +38,6 @@
   padding: 8px 0px;
 }
 
-
-.projet__item{
-  position: relative;
-
-  height: auto;
-  width: 100%;
-  background: #181818;
-
-  border-radius: 8px;
-
-  padding: 24px;
-  box-sizing: border-box;
-
-  overflow: hidden;
-}
-
 .flex {
   display: flex;
   justify-content: space-between;
@@ -65,38 +49,6 @@
   align-items: center;
 }
 
-.projet__item__icon{
-  width: 35px;
-  height: 35px;
-}
-
-.projet__item__photo{
-  background: blue;
-  width: 170px;
-  height: 110px;
-  border-radius: 8px;
-
-  transform: translate(0, -30px) rotate(-10deg);
-  overflow: hidden;
-}
-
-.projet__item__photo__img{
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-}
-
-.projet__item__title{
-  font-family: var(--font-family-monumentextended);
-  font-size: 27px;
-  padding: 16px 0;
-}
-
-.projet__item__description{
-  font-family: 'SF Pro Display';
-  font-size: 20px;
-  color: var(--color-subtitle);
-}
 
 .idla{
   color: var(--color-IDLA);
@@ -234,21 +186,6 @@
 
 .testgrid > div{
 border: 2px solid white;
-}
-.epitech{
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(8px);
-  /* border-top: 1px solid rgba(255, 255, 255, 0.4);
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 3px 3px 3px rgba(0, 0, 0); */
-
-  display: grid;
-  grid-template-rows: 1fr 5fr;
-  gap: 8px;
-  padding: 16px;
-  box-sizing: border-box;
 }
 @media (min-width: 768px){
   .container {
