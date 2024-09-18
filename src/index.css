@@ -196,6 +196,9 @@ p{
   color: var(--color-EPITECH);
 }
 
+.color-esgi{
+  color: var(--color-ESGI);
+}
 .color-idla-gradient {
   width: fit-content;
   color:transparent;

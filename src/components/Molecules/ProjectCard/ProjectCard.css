@@ -131,3 +131,57 @@
 .projet__item:hover .esgi{
   opacity: 1;
 }
+
+
+
+.projet__item__idla{
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  gap: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  align-items: end;
+
+  opacity: 0;
+  transition: opacity 0.4s ease
+}
+
+.projet__item:hover .projet__item__idla{
+  opacity: 1;
+}
+
+.projet__item__idla__separator-idla{
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  gap: 8px;
+}
+
+.projet__item__idla__separator__title-idla{
+  width: fit-content;
+  color: var(--color-IDLA);
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+}
+
+.projet__item__idla__separator__line-idla{
+  background: var(--color-IDLA-50);
+  font-size: var(--font-size-lg);
+  width: 100%;
+  height: 1px;
+}
+
+.place-right{
+  display: flex;
+  justify-content: right;
+}
+
+.hover-color-idla:hover{
+ color: var(--color-IDLA);
+ fill: var(--color-IDLA);
+}
