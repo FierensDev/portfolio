@@ -21,9 +21,9 @@ export function Navbar(){
       <Burger handleDisplayNavbar={handlerDisplayNavbar} displayNavbar={displayNavbar}/>
     </div>
     <div className="navbar__main__links">
-      <Link className="onhover-color-white" to="/portfolio#section_project">projets</Link>
-      <Link className="onhover-color-white" to="/portfolio#section_about">a propos</Link>
-      <Link className="onhover-color-white" to="/portfolio/contact">me contacter</Link>
+      <Link className="onhover-color-white" to="/portfolio#section_project">Projets</Link>
+      <Link className="onhover-color-white" to="/portfolio#section_about">À propos</Link>
+      <Link className="onhover-color-white" to="/portfolio/contact">Me contacter</Link>
     </div>  
     <div className={displayNavbar ? `hide-element` : `navbar__main__progress-bar` }>
       <div className="navbar__main__progress-bar__scroll-watcher"></div>
@@ -33,9 +33,9 @@ export function Navbar(){
   {
     displayNavbar ? 
     <div className="navbar__burger-menu-open">
-      <Link className="onhover-color-white" to="/portfolio#section_project" onClick={handlerDisplayNavbar}>projets</Link>
-      <Link className="onhover-color-white" to="/portfolio#section_about" onClick={handlerDisplayNavbar}>a propos</Link>
-      <Link className="onhover-color-white" to="/portfolio/contact" onClick={handlerDisplayNavbar}>me contacter</Link>
+      <Link className="onhover-color-white" to="/portfolio#section_project" onClick={handlerDisplayNavbar}>Projets</Link>
+      <Link className="onhover-color-white" to="/portfolio#section_about" onClick={handlerDisplayNavbar}>À propos</Link>
+      <Link className="onhover-color-white" to="/portfolio/contact" onClick={handlerDisplayNavbar}>Me contacter</Link>
     </div>
     :
     <></>

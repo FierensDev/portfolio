@@ -69,7 +69,7 @@ export function ProjectCard({icon, iconAlt, img, imgAlt, title1, title2, subtitl
             <p className='color-epitech text-20'>2022 . 2024</p>
           </div>
           <div className="color-white text-20"> 
-            Réalisation de plusieurs projets en solo ou en équipe, avec une spécialisation en web afin de me perfectionner en front-end et back-end tout en intégrant différentes technologies.
+            Réalisation de plusieurs projets, en solo ou en équipe, avec une spécialisation en développement web afin de me perfectionner en front-end et back-end, tout en intégrant diverses technologies.
           </div>
           {/* <div>
             php, javascript, Typescript, java, python, GO, html, css, SQL
@@ -90,7 +90,7 @@ export function ProjectCard({icon, iconAlt, img, imgAlt, title1, title2, subtitl
             <p className='color-esgi text-20'>2024 . 2027</p>
           </div>
           <div className="color-white text-20"> 
-          Face à une constante évolution du secteur du Web, tant au niveau des langages de programmation utilisés que des méthodes de gestion de projet, la filière Ingénierie du Web nous forme à devenir expert en développement web Full-Stack.
+          Avec l'évolution rapide du secteur du Web, tant dans les langages de programmation que dans les méthodes de gestion de projet, la filière Ingénierie du Web nous prépare à devenir des experts en développement web full-stack.
           </div>
         </div>
       :

@@ -10,9 +10,9 @@ export function Footer(){
       <Link to={'/portfolio#t'} className="footer__website text-20 color-white">fierensdev.com</Link>
       
       <div className='footer__navbar text-base '>
-        <Link className='onhover-color-white' to={"/portfolio#section_project"}>projets</Link>
-        <Link className='onhover-color-white' to={"/portfolio#section_about"}>a propos</Link>
-        <Link className='onhover-color-white' to={"/portfolio/contact"}>contact</Link>
+        <Link className='onhover-color-white' to={"/portfolio#section_project"}>Projets</Link>
+        <Link className='onhover-color-white' to={"/portfolio#section_about"}>À propos</Link>
+        <Link className='onhover-color-white' to={"/portfolio/contact"}>Contact</Link>
       </div>
 
       <div className='footer__contact text-base '>

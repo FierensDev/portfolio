@@ -48,10 +48,9 @@ export function Contact(){
   return(
     <div className="adapt-to-container">
       <div className="contact">
-        <h2 className="text-h2 text-gradient contact__title">Contactez moi</h2>
+        <h2 className="text-h2 text-gradient contact__title">Contactez-moi</h2>
 
-        <p className="text-gradient text-h3 contact__subtitle">N'hésitez pas à me contacter à tout moment,
-          je vous répondrai dès que possible
+        <p className="text-gradient text-h3 contact__subtitle">N'hésitez pas à me contacter à tout moment, je vous répondrai dès que possible
         </p>
       </div>
 
@@ -72,13 +71,13 @@ export function Contact(){
               <div className='button__content'>Envoyer</div>
             :
             submitState === 102 ? 
-              <div className='text-color-text'>Envoie en cours...</div>
+              <div className='text-color-text'>Envoi en cours...</div>
             :
             submitState === 200 ? 
              <div className='text-color-text'>Message envoyé !</div>
             :
             submitState === 400 ? 
-            <div className='text-color-error'>Erreur veuillez réessayer plus tard...</div>
+            <div className='text-color-error'>Erreur. Veuillez réessayer plus tard...</div>
            :
               <></>
             }
@@ -118,7 +117,7 @@ export function Contact(){
               <div className='button__background-to-top'></div>
             </div>
             <div className='social-media__text'>
-              <p className='color-white text-20'>Linkedin</p>
+              <p className='color-white text-20'>LinkedIn</p>
               <p className='color-gradient onhover-color-white'>fierensdenis</p>
             </div>
           </a>
