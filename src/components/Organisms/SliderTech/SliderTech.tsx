@@ -28,61 +28,62 @@ export function SliderTech(){
   return(
     <div className='slider'>
       <div className='slider-ToRight'>
-        <SliderTechCard title={'PostgreSQL'} img={PostgreSQLSVG} imgAlt='postgreSQL'/>
-        <SliderTechCard title={'NextJS'} img={NextSVG} imgAlt='Next'/>
-        <SliderTechCard title={'HTML'} img={HtmlSvg} imgAlt='HTML-5'/>
-        <SliderTechCard title={'CSS'} img={CssSvg} imgAlt='CSS'/>
-        <SliderTechCard title={'Javascript'} img={JavascriptSvg} imgAlt='Javascript'/>
+        <SliderTechCard link='https://www.postgresql.org/' title={'PostgreSQL'} img={PostgreSQLSVG} imgAlt='postgreSQL'/>
+        <SliderTechCard link='https://nextjs.org/' title={'NextJS'} img={NextSVG} imgAlt='Next'/>
+        <SliderTechCard link='https://developer.mozilla.org/fr/docs/Web/HTML' title={'HTML'} img={HtmlSvg} imgAlt='HTML-5'/>
+        <SliderTechCard link='https://developer.mozilla.org/fr/docs/Web/CSS' title={'CSS'} img={CssSvg} imgAlt='CSS'/>
+        <SliderTechCard link='https://developer.mozilla.org/fr/docs/Web/JavaScript' title={'Javascript'} img={JavascriptSvg} imgAlt='Javascript'/>
         
-        <SliderTechCard title={'PHP'} img={PhpSvg} imgAlt='PHP'/>
-        <SliderTechCard title={'Java'} img={JavaSvg} imgAlt='Java'/>
-        <SliderTechCard title={'NodeJS'} img={NodeSvg} imgAlt='NodeJS'/>
-        <SliderTechCard title={'Git'} img={GitSvg} imgAlt='Git'/>
-        <SliderTechCard title={'Typescript'} img={TypescriptSvg} imgAlt='Typescript'/>
+        <SliderTechCard link='https://www.php.net/manual/fr/intro-whatis.php' title={'PHP'} img={PhpSvg} imgAlt='PHP'/>
+        <SliderTechCard link='https://www.java.com/fr/' title={'Java'} img={JavaSvg} imgAlt='Java'/>
+        <SliderTechCard link='https://nodejs.org/fr' title={'NodeJS'} img={NodeSvg} imgAlt='NodeJS'/>
+        <SliderTechCard link='https://git-scm.com/' title={'Git'} img={GitSvg} imgAlt='Git'/>
+        <SliderTechCard link='https://www.typescriptlang.org/' title={'Typescript'} img={TypescriptSvg} imgAlt='Typescript'/>
         
-        <SliderTechCard title={'MySQL'} img={MySqlSvg} imgAlt='MySQL'/>
-        <SliderTechCard title={'MongoDB'} img={MongoDbSvg} imgAlt='MongoDB'/>
-        <SliderTechCard title={'Bootstrap'} img={BootstrapSvg} imgAlt='Bootstrap'/>
-        <SliderTechCard title={'Tailwind'} img={TailwindSvg} imgAlt='Tailwind'/>
-        <SliderTechCard title={'Angular'} img={AngularSvg} imgAlt='Angular'/>
+        <SliderTechCard link='https://www.mysql.com/fr/' title={'MySQL'} img={MySqlSvg} imgAlt='MySQL'/>
+        <SliderTechCard link='https://www.mongodb.com/fr-fr' title={'MongoDB'} img={MongoDbSvg} imgAlt='MongoDB'/>
+        <SliderTechCard link='https://getbootstrap.com/' title={'Bootstrap'} img={BootstrapSvg} imgAlt='Bootstrap'/>
+        <SliderTechCard link='https://tailwindcss.com/' title={'Tailwind'} img={TailwindSvg} imgAlt='Tailwind'/>
+        <SliderTechCard link='https://angular.dev/' title={'Angular'} img={AngularSvg} imgAlt='Angular'/>
         
-        <SliderTechCard title={'ReactJS'} img={ReactSvg} imgAlt='ReactJS'/>
-        <SliderTechCard title={'ExpressJS'} img={ExpressSvg} imgAlt='ExpressJS'/>
-        <SliderTechCard title={'Jquery'} img={JquerySvg} imgAlt='Jquery'/>
-        <SliderTechCard title={'Laravel'} img={LaravelSvg} imgAlt='Laravel'/>
-        <SliderTechCard title={'Symfony'} img={SymfonySvg} imgAlt='Symfony'/>
+        <SliderTechCard link='https://fr.react.dev/' title={'ReactJS'} img={ReactSvg} imgAlt='ReactJS'/>
+        <SliderTechCard link='https://expressjs.com/fr/' title={'ExpressJS'} img={ExpressSvg} imgAlt='ExpressJS'/>
+        <SliderTechCard link='https://jquery.com/' title={'Jquery'} img={JquerySvg} imgAlt='Jquery'/>
+        <SliderTechCard link='https://laravel.com/' title={'Laravel'} img={LaravelSvg} imgAlt='Laravel'/>
+        <SliderTechCard link='https://symfony.com/' title={'Symfony'} img={SymfonySvg} imgAlt='Symfony'/>
         
-        <SliderTechCard title={'Spring Boot'} img={SpringbootSvg} imgAlt='Spring Boot'/>
-        <SliderTechCard title={'VueJS'} img={VueSvg} imgAlt='VueJS'/>
+        <SliderTechCard link='https://spring.io/projects/spring-boot' title={'Spring Boot'} img={SpringbootSvg} imgAlt='Spring Boot'/>
+        <SliderTechCard link='https://vuejs.org/' title={'VueJS'} img={VueSvg} imgAlt='VueJS'/>
 
 
+        <SliderTechCard link='https://www.postgresql.org/' title={'PostgreSQL'} img={PostgreSQLSVG} imgAlt='postgreSQL'/>
+        <SliderTechCard link='https://nextjs.org/' title={'NextJS'} img={NextSVG} imgAlt='Next'/>
+        <SliderTechCard link='https://developer.mozilla.org/fr/docs/Web/HTML' title={'HTML'} img={HtmlSvg} imgAlt='HTML-5'/>
+        <SliderTechCard link='https://developer.mozilla.org/fr/docs/Web/CSS' title={'CSS'} img={CssSvg} imgAlt='CSS'/>
+        <SliderTechCard link='https://developer.mozilla.org/fr/docs/Web/JavaScript' title={'Javascript'} img={JavascriptSvg} imgAlt='Javascript'/>
+        
+        <SliderTechCard link='https://www.php.net/manual/fr/intro-whatis.php' title={'PHP'} img={PhpSvg} imgAlt='PHP'/>
+        <SliderTechCard link='https://www.java.com/fr/' title={'Java'} img={JavaSvg} imgAlt='Java'/>
+        <SliderTechCard link='https://nodejs.org/fr' title={'NodeJS'} img={NodeSvg} imgAlt='NodeJS'/>
+        <SliderTechCard link='https://git-scm.com/' title={'Git'} img={GitSvg} imgAlt='Git'/>
+        <SliderTechCard link='https://www.typescriptlang.org/' title={'Typescript'} img={TypescriptSvg} imgAlt='Typescript'/>
+        
+        <SliderTechCard link='https://www.mysql.com/fr/' title={'MySQL'} img={MySqlSvg} imgAlt='MySQL'/>
+        <SliderTechCard link='https://www.mongodb.com/fr-fr' title={'MongoDB'} img={MongoDbSvg} imgAlt='MongoDB'/>
+        <SliderTechCard link='https://getbootstrap.com/' title={'Bootstrap'} img={BootstrapSvg} imgAlt='Bootstrap'/>
+        <SliderTechCard link='https://tailwindcss.com/' title={'Tailwind'} img={TailwindSvg} imgAlt='Tailwind'/>
+        <SliderTechCard link='https://angular.dev/' title={'Angular'} img={AngularSvg} imgAlt='Angular'/>
+        
+        <SliderTechCard link='https://fr.react.dev/' title={'ReactJS'} img={ReactSvg} imgAlt='ReactJS'/>
+        <SliderTechCard link='https://expressjs.com/fr/' title={'ExpressJS'} img={ExpressSvg} imgAlt='ExpressJS'/>
+        <SliderTechCard link='https://jquery.com/' title={'Jquery'} img={JquerySvg} imgAlt='Jquery'/>
+        <SliderTechCard link='https://laravel.com/' title={'Laravel'} img={LaravelSvg} imgAlt='Laravel'/>
+        <SliderTechCard link='https://symfony.com/' title={'Symfony'} img={SymfonySvg} imgAlt='Symfony'/>
+        
+        <SliderTechCard link='https://spring.io/projects/spring-boot' title={'Spring Boot'} img={SpringbootSvg} imgAlt='Spring Boot'/>
+        <SliderTechCard link='https://vuejs.org/' title={'VueJS'} img={VueSvg} imgAlt='VueJS'/>
 
-        <SliderTechCard title={'PostgreSQL'} img={PostgreSQLSVG} imgAlt='postgreSQL'/>
-        <SliderTechCard title={'NextJS'} img={NextSVG} imgAlt='Next'/>
-        <SliderTechCard title={'HTML'} img={HtmlSvg} imgAlt='HTML-5'/>
-        <SliderTechCard title={'CSS'} img={CssSvg} imgAlt='CSS'/>
-        <SliderTechCard title={'Javascript'} img={JavascriptSvg} imgAlt='Javascript'/>
-        
-        <SliderTechCard title={'PHP'} img={PhpSvg} imgAlt='PHP'/>
-        <SliderTechCard title={'Java'} img={JavaSvg} imgAlt='Java'/>
-        <SliderTechCard title={'NodeJS'} img={NodeSvg} imgAlt='NodeJS'/>
-        <SliderTechCard title={'Git'} img={GitSvg} imgAlt='Git'/>
-        <SliderTechCard title={'Typescript'} img={TypescriptSvg} imgAlt='Typescript'/>
-        
-        <SliderTechCard title={'MySQL'} img={MySqlSvg} imgAlt='MySQL'/>
-        <SliderTechCard title={'MongoDB'} img={MongoDbSvg} imgAlt='MongoDB'/>
-        <SliderTechCard title={'Bootstrap'} img={BootstrapSvg} imgAlt='Bootstrap'/>
-        <SliderTechCard title={'Tailwind'} img={TailwindSvg} imgAlt='Tailwind'/>
-        <SliderTechCard title={'Angular'} img={AngularSvg} imgAlt='Angular'/>
-        
-        <SliderTechCard title={'ReactJS'} img={ReactSvg} imgAlt='ReactJS'/>
-        <SliderTechCard title={'ExpressJS'} img={ExpressSvg} imgAlt='ExpressJS'/>
-        <SliderTechCard title={'Jquery'} img={JquerySvg} imgAlt='Jquery'/>
-        <SliderTechCard title={'Laravel'} img={LaravelSvg} imgAlt='Laravel'/>
-        <SliderTechCard title={'Symfony'} img={SymfonySvg} imgAlt='Symfony'/>
-        
-        <SliderTechCard title={'Spring Boot'} img={SpringbootSvg} imgAlt='Spring Boot'/>
-        <SliderTechCard title={'VueJS'} img={VueSvg} imgAlt='VueJS'/>
+
       </div>
     </div>
   )
