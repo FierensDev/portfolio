@@ -10,7 +10,7 @@
 .slider-ToRight{
   display: flex;
   width: calc(100px * 44);
-  animation: scrollToRight 7s linear infinite;
+  animation: scrollToRight 40s linear infinite;
   gap: 8px;
 }
 
