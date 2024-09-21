@@ -44,19 +44,7 @@ export function Home(){
             <div className='adapt-to-container'>
               <SliderTech />
             </div>
-{/* 
-            <div className='slide1'>
-              <div className='square'></div>
-              <div className='square'></div>
-              <div className='square'></div>
-              <div className='square'></div>
-              <div className='square'></div>
-              <div className='square'></div>
-              <div className='square'></div>
-              <div className='square'></div>
-              <div className='square'></div>
-              <div className='square'></div>
-            </div> */}
+            
           </div>
           <div className='presentation__project'>
             <Separator title='projets' id={"section_project"}/>
