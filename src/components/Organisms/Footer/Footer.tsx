@@ -3,11 +3,12 @@ import './Footer.css'
 import GithubIcon from '../../../assets/github.svg'
 import InstagramIcon from '../../../assets/instagram.svg'
 import LinkedinIcon from '../../../assets/linkedin.svg'
+import Logo from '../../../assets/logoFD.svg'
 export function Footer(){
   return(
   <div className='container'>
     <div className='footer adapt-to-container'>
-      <Link to={'/portfolio#t'} className="footer__website text-20 color-white">fierensdev.com</Link>
+      <Link to={'/portfolio#t'} className="footer__website text-20 color-white"><img src={Logo} alt="" className="logo" /> fierensdev.com</Link>
       
       <div className='footer__navbar text-base '>
         <Link className='onhover-color-white' to={"/portfolio#section_project"}>Projets</Link>

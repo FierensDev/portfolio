@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Burger } from "../../Atoms/burger/Burger";
 import './Navbar.css'
 import { Link } from "react-router-dom";
+import Logo from '../../../assets/logoFD.svg'
 
 export function Navbar(){
   const [displayNavbar, setDisplayNavbar] = useState<boolean>(false)
@@ -14,6 +15,7 @@ export function Navbar(){
 <nav className={displayNavbar ? `navbar anime-extend-menu` : `navbar anime-extend-menu-reverse` }>
   <div className="navbar__main">
     <Link to={'/portfolio#t'} >
+      
       <h1>Denis Fierens</h1>
     </Link>
 

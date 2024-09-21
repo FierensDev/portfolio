@@ -73,7 +73,7 @@ export function Home(){
             <div className='adapt-to-container'>
               <div className='about'>
                 <div className='about__container'>
-                  <Separator title='a propos' id={"section_about"}/>
+                  <Separator title='à propos' id={"section_about"}/>
                   <h3 className='text-gradient text-lg text-center'>À 25 ans, en tant que jeune Français, je combine mon expertise en informatique avec ma passion pour le sport et les voyages. Toujours en quête de nouveaux défis et d'innovations, je suis enthousiaste à l'idée de m'engager dans de nouveaux projets et de découvrir de nouvelles opportunités.</h3>
                   <a href="/portfolio/assets/Fierens_Cv_Dev.pdf" download="Fierens_CV_DEV" className='button hide-phone'>
                     <div className='button__content'>Téléchargez mon CV</div>
