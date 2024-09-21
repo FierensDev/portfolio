@@ -12,6 +12,7 @@ import ESGIBg from '../../../assets/esgibg2.jpg'
 
 import ArrowSvg from '../../../assets/arrow.svg'
 import { useEffect } from "react";
+import { SliderTech } from "../../Organisms/SliderTech/SliderTech";
 
 export function Home(){
 
@@ -39,12 +40,11 @@ export function Home(){
                 <span className='move-text-to-top text-h2 text-color-text'>Back-end</span>
               </div>
             </div>
-{/* 
+
             <div className='adapt-to-container'>
               <SliderTech />
-              <SliderTech />
             </div>
-
+{/* 
             <div className='slide1'>
               <div className='square'></div>
               <div className='square'></div>

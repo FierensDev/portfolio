@@ -5,13 +5,102 @@ import NextSVG from '../../../assets/next.svg'
 
 export function SliderTech(){
   return(
-    <div className='slider-tech animation-slide'>
-      <SliderTechCard title={'PostgreSQL'} img={PostgreSQLSVG}/>
-      <SliderTechCard title={'NextJS'} img={NextSVG}/>
-      <SliderTechCard title={'PostgreSQL'} img={PostgreSQLSVG}/>
-      <SliderTechCard title={'NextJS'} img={NextSVG}/>
-      <SliderTechCard title={'PostgreSQL'} img={PostgreSQLSVG}/>
-      <SliderTechCard title={'NextJS'} img={NextSVG}/>
+    <div className='slider'>
+      <div className='slider-ToRight'>
+        {/* <SliderTechCard title={'PostgreSQL'} img={PostgreSQLSVG}/> */}
+
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+          
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+          
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+          
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+        
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+          
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+          
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+          
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+          
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+
+{/* 9more */}
+
+<div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+          
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+          
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+          
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+        
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+          
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+          
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+          
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+          
+          <div className='slide-item'>
+            <img src={NextSVG} alt="Next" className='slide-item__img'/>
+            <p className='slide-item__title'>NextSVG</p>
+          </div> 
+      </div>
     </div>
   )
 }
